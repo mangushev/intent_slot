@@ -1,4 +1,4 @@
-#Intent slot model used in artificial assistant (written in Tensorflow)
+Intent slot model used in artificial assistant (written in Tensorflow)
 
 This is an implementation of "BERT for Joint Intent Classification and Slot Filling" - arXiv:1902.10909v1  [cs.CL]  28 Feb 2019.
 
