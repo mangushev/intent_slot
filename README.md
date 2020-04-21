@@ -1,4 +1,4 @@
-Intent slot model used in artificial assistant (written in Tensorflow)
+Intent slot model used in artificial assistant in the bank or similar industry. Implemented Tensorflow with instructions how to run to run on GCP.
 
 This is an implementation of "BERT for Joint Intent Classification and Slot Filling" - arXiv:1902.10909v1  [cs.CL]  28 Feb 2019.
 
@@ -22,24 +22,27 @@ Contains of the repository:
 - data folder: train.tsv, dev.tsv, test.tsv. All of them have sentence, intent_label, slot labels separated by tab. But sentence tokens and slot label tokens are separated by space. 
 
 Intents and slot labels came from Snips for: 
-AddToPlaylist
-BookRestaurant
-GetWeather
-PlayMusic
-RateBook
-SearchCreativeWork
-SearchScreeningEvent
+- AddToPlaylist
+- BookRestaurant
+- GetWeather
+- PlayMusic
+- RateBook
+- SearchCreativeWork
+- SearchScreeningEvent
+
+They are obviously not a financial domain, but just to have more intents. They can be considered Out-of-Scope intents! Remove them whe you have plenty of domain intents.
 
 Slot are manually labeled for:
-bill_due
-report_fraud
-transfer
+- bill_due
+- report_fraud
+- transfer
 
-- train folder has three scripts:INTENT_SLOT.deployment, INTENT_SLOT.evaluate, INTENT_SLOT.predict
 
-evaluate is used for both training and evaluation using train.tsv and dev.tsv data files.
-predict uses test.tsv
-deployment creates saved_model.pb file and variables which are used to deploy model is a way so it can be used for online prediction
+- train folder has three scripts:INTENT_SLOT.deployment, INTENT_SLOT.evaluate, INTENT_SLOT.predict:
+
+	- evaluate is used for both training and evaluation using train.tsv and dev.tsv data files.
+	- predict uses test.tsv
+	- deployment creates saved_model.pb file and variables which are used to deploy model is a way so it can be used for online prediction
 
 - assistant/deploy/deploy_intent_slot.sh deploys .pb model with variables to gcp ai platform
 - assistant/functions/intent_slot contains function that is fronting model and provides better interface for consuming application
