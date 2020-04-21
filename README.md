@@ -1,9 +1,8 @@
-# intent_slot
-Intent slot model used in artificial assistant written in Tensorflow
+#Intent slot model used in artificial assistant (written in Tensorflow)
 
 This is an implementation of "BERT for Joint Intent Classification and Slot Filling" - arXiv:1902.10909v1  [cs.CL]  28 Feb 2019.
 
-There is a joint training using BERT and loss is calculated as total loss from intent and slotss. Objective function is calculated as in equation (3) in the arcticle. 
+Joint training using BERT and loss is calculated as total loss from intent and slots. Objective function is calculated as in equation (3) in the arcticle. 
 
 Please make yourself familiar with BERT: Pre-training of Deep Bidirectional Transformers forLanguage Understanding - arXiv:1810.04805v2  [cs.CL]  24 May 2019
 
