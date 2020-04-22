@@ -1,0 +1,760 @@
+when do i need to pay my dte energy bill	bill_due	O O O O O O O B-bill_type I-bill_type O
+what day do i have to pay my leasing office bill	bill_due	O O O O O O O O B-bill_type I-bill_type O
+what day is my telephone bill due	bill_due	O O O O B-bill_type O O
+when is my cell phone bill due	bill_due	O O O B-bill_type I-bill_type O O
+what day do i need to pay my internet and phone bill by	bill_due	O O O O O O O O B-bill_type I-bill_type I-bill_type O O
+what ' s the due date for spectrum ' s bill	bill_due	O O O O O O O B-bill_type O O O
+what date do i have to pay the phone bill on	bill_due	O O O O O O O O B-bill_type O O
+can you tell me the due date for the water bill	bill_due	O O O O O O O O O B-bill_type O
+what day is the cable bill owed on	bill_due	O O O O B-bill_type O O O
+when is the electric bill due	bill_due	O O O B-bill_type O O
+when do i need to pay my car insurance bill by	bill_due	O O O O O O O B-bill_type I-bill_type O O
+how do i find out when my visa bill is due	bill_due	O O O O O O O B-bill_type O O O
+tell me how i know when to pay my chase bill	bill_due	O O O O O O O O O B-bill_type O
+tell me when my mastercard bill should be paid	bill_due	O O O O B-bill_type O O O O
+when should i pay my pg & e bill	bill_due	O O O O O B-bill_type I-bill_type I-bill_type O
+when is my kaiser bill due	bill_due	O O O B-bill_type O O
+how long do i have to pay that bill	bill_due	O O O O O O O O O
+is there a due date on the bill	bill_due	O O O O O O O O
+is the bill due this week	bill_due	O O O O O O
+i need to know what day i need to pay my water bill	bill_due	O O O O O O O O O O O B-bill_type O
+contact the bank about fraud activity on my card	report_fraud	O O O O O O O O B-transaction-to
+i need to talk to someone about a fraudulent activity on my card	report_fraud	O O O O O O O O O O O O B-transaction-to
+i need to report unauthorized activity on my card	report_fraud	O O O O O O O O B-transaction-to
+looks like my card is being used by someone else , report it	report_fraud	O O O B-transaction-to O O O O O O O O O
+there ' s something fishy on my card , report it	report_fraud	O O O O O O O B-transaction-to O O O
+how do i report fraud on my chase bank card	report_fraud	O O O O O O O B-transaction-to I-transaction-to I-transaction-to
+someone is charging my card for playstations , and it ' s not me ! what do i do !	report_fraud	O O O O B-transaction-to O O O O O O O O O O O O O O O
+help ! i ' m a victim of credit card fraud !	report_fraud	O O O O O O O O B-transaction-to I-transaction-to O O
+i want to report fraud on my american express	report_fraud	O O O O O O O B-transaction-to I-transaction-to
+where do i report fraud on my credit card	report_fraud	O O O O O O O B-transaction-to I-transaction-to
+i want to report fraudulent activity on my mastercard	report_fraud	O O O O O O O O B-transaction-to
+i want to report fraudulent activity on my quicksilver card	report_fraud	O O O O O O O O B-transaction-to I-transaction-to
+i want to report fraudulent activity on my capital one	report_fraud	O O O O O O O O B-transaction-to I-transaction-to
+i want to report fraudulent activity on my discover card	report_fraud	O O O O O O O O B-transaction-to I-transaction-to
+i want to report fraudulent activity on my visa	report_fraud	O O O O O O O O B-transaction-to
+i think there has been a fraud on my black visa card , can i report it	report_fraud	O O O O O O O O O B-transaction-to I-transaction-to I-transaction-to O O O O O
+can you assist me on my fradulent activity on my chase card	report_fraud	O O O O O O O O O O B-transaction-to I-transaction-to
+an unauthorized transactions has been made on my gap card and i need to report it	report_fraud	O O O O O O O O B-transaction-to I-transaction-to O O O O O O
+is there anyway , i can report a suspicious activity on my citi card	report_fraud	O O O O O O O O O O O O B-transaction-to I-transaction-to
+i would like to report a fraud on my wells fargo card , please	report_fraud	O O O O O O O O O B-transaction-to I-transaction-to I-transaction-to O O
+transfer ten dollars from my wells fargo account to my bank of america account	transfer	O B-amount I-amount O O B-account-from I-account-from O O O B-account-to I-account-to I-account-to O
+take one hundred and fifty bucks from my wells fargo checking account and put it in my wells fargo savings account	transfer	O B-amount I-amount I-amount I-amount I-amount O O B-account-from I-account-from I-account-from O O O O O O B-account-to I-account-to I-account-to O
+put one hundred and seventy five bucks in my wells fargo checking account from my citibank savings account	transfer	O B-amount I-amount I-amount I-amount I-amount I-amount O O B-account-to I-account-to I-account-to O O O B-account-from I-account-from O
+move two hundred dollars from my chase savings account to my wells fargo checking account	transfer	O B-amount I-amount I-amount O O B-account-from I-account-from O O O B-account-to I-account-to I-account-to O
+move three hundred and fifty dollars from my citibank savings account to my chase savings account	transfer	O B-amount I-amount I-amount I-amount I-amount O O B-account-from I-account-from O O O B-account-to I-account-to O
+move a dollar from my checkings to my savings	transfer	O B-amount I-amount O O B-account-from O O B-account-to
+move my money to the other account	transfer	O O O O O B-account-to O
+transfer funds to the other account	transfer	O O O O B-account-to O
+please transfer half of my funds to an alternate account	transfer	O O B-amount I-amount I-amount I-amount O O B-account-to O
+can you move my money to my savings	transfer	O O O O O O O B-account-to
+make an eft to my savings from my checking account	transfer	O O O O O B-account-to O O B-account-from O
+send 100 dollars from my vanguard money market to my wells fargo savings	transfer	O B-amount I-amount O O B-account-from I-account-from I-account-from O O B-account-to I-account-to I-account-to
+i need 200 dollars transferred from my long island savings account to my chase checking	transfer	O O B-amount I-amount O O O B-account-from I-account-from I-account-from O O O B-account-to I-account-to
+send from my bbc money market to my t rowe price money market seven thousand dollars	transfer	O O O B-account-from I-account-from I-account-from O O B-account-to I-account-to I-account-to I-account-to I-account-to B-amount I-amount O
+i need 2000 to go to my chase checking from my mellon bank savings account	transfer	O O B-amount O O O O B-account-to I-account-to O O B-account-from I-account-from I-account-from O
+move 100 dollars from my savings to my checking	transfer	O B-amount I-amount O O B-account-from O O B-account-to
+transfer 1000 dollars from my first national bank to my bethpage federal credit union savings	transfer	O B-amount I-amount O O B-account-from I-account-from I-account-from O O B-account-to I-account-to I-account-to I-account-to I-account-to
+take out of my checking 400 dollars and put it into my emergency savings account	transfer	O O O O B-account-from B-amount I-amount O O O O O B-account-to I-account-to O
+i need to transfer one thousand dollars to my savings account from my checking	transfer	O O O O B-amount I-amount I-amount O O B-account-to O O O B-account-from
+transfer 50 dollars from my checking account to my money market account	transfer	O B-amount I-amount O O B-account-from O O O B-account-to I-account-to O
+i d like to have this track onto my classical relaxations playlist 	AddToPlaylist	O O O O O O B-music_item O B-playlist_owner B-playlist I-playlist O 
+add the album to my flow español playlist 	AddToPlaylist	O O B-music_item O B-playlist_owner B-playlist I-playlist O 
+add digging now to my young at heart playlist	AddToPlaylist	O B-playlist I-playlist O B-playlist_owner B-entity_name I-entity_name I-entity_name O 
+add this song by too poetic to my piano ballads playlist	AddToPlaylist	O O B-music_item O B-artist I-artist O B-playlist_owner B-playlist I-playlist O 
+add this album to old school death metal	AddToPlaylist	O O B-music_item O B-playlist I-playlist I-playlist I-playlist 
+i need to add baro ferret to the urban hits under my name	AddToPlaylist	O O O O B-artist I-artist O O B-playlist I-playlist O B-playlist_owner O 
+add the album to the might and myth power metal playlist 	AddToPlaylist	O O B-music_item O O B-playlist I-playlist I-playlist I-playlist I-playlist O 
+to the travelling playlist  please add this david gahan song 	AddToPlaylist	O O B-playlist O O O O B-artist I-artist B-music_item 
+please add some pete townshend to my playlist fiesta hits con lali	AddToPlaylist	O O O B-artist I-artist O B-playlist_owner O B-playlist I-playlist I-playlist I-playlist 
+i d like for kasey chambers s tune to be an addition to my chips and salsa playlist 	AddToPlaylist	O O O O B-artist I-artist O B-music_item O O O O O B-playlist_owner B-playlist I-playlist I-playlist O 
+add recalled to life to this is alejandro fernández	AddToPlaylist	O B-entity_name I-entity_name I-entity_name O B-playlist I-playlist I-playlist I-playlist 
+add nuba to my metal party playlist	AddToPlaylist	O B-entity_name O B-playlist_owner B-playlist I-playlist O 
+add jo stafford music to the workout twerkout playlist	AddToPlaylist	O B-artist I-artist O O O B-playlist I-playlist O 
+put jean philippe goncalves onto my running to rock 170 to 190 bpm 	AddToPlaylist	O B-artist I-artist I-artist O B-playlist_owner B-playlist I-playlist I-playlist I-playlist I-playlist I-playlist I-playlist 
+add the song virales de siempre by the cary brothers to my gym playlist 	AddToPlaylist	O O B-music_item B-playlist I-playlist I-playlist O O B-artist I-artist O B-playlist_owner O O 
+onto jerry s classical moments in movies  please add the album 	AddToPlaylist	O B-playlist_owner I-playlist_owner B-playlist I-playlist I-playlist I-playlist O O O B-music_item 
+add beyond the valley of 1984 in playlist folk music at the gaslight café	AddToPlaylist	O B-entity_name I-entity_name I-entity_name I-entity_name I-entity_name O O B-playlist I-playlist I-playlist I-playlist I-playlist I-playlist 
+add jerry calliste  jr to my te quiero playlist 	AddToPlaylist	O B-artist I-artist I-artist O B-playlist_owner B-playlist I-playlist O 
+add porter wagoner to the the sleep machine waterscapes playlist 	AddToPlaylist	O B-artist I-artist O O B-playlist I-playlist I-playlist I-playlist O 
+add the artist mike to the sexy as folk playlist 	AddToPlaylist	O O B-music_item B-artist O O B-playlist I-playlist I-playlist O 
+add brazilian flag anthem to top 100 alternative tracks on spotify	AddToPlaylist	O B-entity_name I-entity_name I-entity_name O B-playlist I-playlist I-playlist I-playlist I-playlist I-playlist 
+add andy hunter to my evening commute playlist 	AddToPlaylist	O B-artist I-artist O B-playlist_owner B-playlist I-playlist O 
+put petar georgiev kalica onto the old school hip hop playlist 	AddToPlaylist	O B-artist I-artist I-artist O O B-playlist I-playlist I-playlist I-playlist O 
+can you add larry heard to my laundry playlist	AddToPlaylist	O O O B-artist I-artist O B-playlist_owner B-playlist O 
+put vandemataram srinivas s track onto hiphop hot 50 	AddToPlaylist	O B-artist I-artist O B-music_item O B-playlist I-playlist I-playlist 
+add millie corretjer to the rhythm playlist	AddToPlaylist	O B-artist I-artist O B-playlist I-playlist O 
+add give us rest to my 70s smash hits playlist 	AddToPlaylist	O B-entity_name I-entity_name I-entity_name O B-playlist_owner B-playlist I-playlist I-playlist O 
+add this track to my hands up playlist	AddToPlaylist	O O B-music_item O B-playlist_owner B-playlist I-playlist O 
+i d like for you to add bobby brown to my enamorándose playlist 	AddToPlaylist	O O O O O O O B-artist I-artist O B-playlist_owner B-playlist O 
+add jonathan sprout album to my this is miranda lambert playlist	AddToPlaylist	O B-artist I-artist B-music_item O B-playlist_owner B-playlist I-playlist I-playlist I-playlist O 
+add ireland in the junior eurovision song contest 2015 to my jazzy dinner playlist	AddToPlaylist	O B-entity_name I-entity_name I-entity_name I-entity_name I-entity_name I-entity_name I-entity_name I-entity_name O B-playlist_owner B-playlist I-playlist O 
+add the album to the the sweet suite playlist 	AddToPlaylist	O O B-music_item O O B-playlist I-playlist I-playlist O 
+add sarah slean to my playlist mellowed out gaming	AddToPlaylist	O B-artist I-artist O B-playlist_owner O B-playlist I-playlist I-playlist 
+add this album to the spanish beat playlist	AddToPlaylist	O O B-music_item O O B-playlist I-playlist O 
+add lofty fake anagram to the la mejor música de bso playlist 	AddToPlaylist	O B-entity_name I-entity_name I-entity_name O O B-playlist I-playlist I-playlist I-playlist I-playlist O 
+add the track to the work playlist 	AddToPlaylist	O O B-music_item O O B-playlist O 
+add a song to this is racionais mc s	AddToPlaylist	O O B-music_item O B-playlist I-playlist I-playlist I-playlist I-playlist 
+add track in my playlist called hands up	AddToPlaylist	O B-music_item O B-playlist_owner O O B-playlist I-playlist 
+can you put this song from yutaka ozaki onto my this is miles davis playlist	AddToPlaylist	O O O O B-music_item O B-artist I-artist O B-playlist_owner B-playlist I-playlist I-playlist I-playlist O 
+add a track to playlist cena con amigos	AddToPlaylist	O O B-music_item O O B-playlist I-playlist I-playlist 
+add the famous flower of serving-men to my evening acoustic playlist 	AddToPlaylist	O B-entity_name I-entity_name I-entity_name I-entity_name I-entity_name O B-playlist_owner B-playlist I-playlist O 
+add a song to indie hipster	AddToPlaylist	O O B-music_item O B-playlist I-playlist 
+add the 40 cal tune to the laundry playlist 	AddToPlaylist	O O B-artist I-artist B-music_item O O B-playlist O 
+add the album to my perfect concentration playlist 	AddToPlaylist	O O B-music_item O B-playlist_owner B-playlist I-playlist O 
+add the matt murphy tune to the flow español playlist 	AddToPlaylist	O O B-artist I-artist B-music_item O O B-playlist I-playlist O 
+add a very cellular song to masters of metal playlist	AddToPlaylist	O B-entity_name I-entity_name I-entity_name I-entity_name O B-playlist I-playlist I-playlist O 
+can i put this tune onto my sin estrés playlist	AddToPlaylist	O O O O B-music_item O B-playlist_owner B-playlist I-playlist O 
+i d like to add jordan rudess onto the divertido para niños playlist 	AddToPlaylist	O O O O O B-artist I-artist O O B-playlist I-playlist I-playlist O 
+add kent james to the disney soundtrack 	AddToPlaylist	O B-artist I-artist O O B-playlist O 
+add the artist adam deibert to my perfect concentration playlist 	AddToPlaylist	O O B-music_item B-artist I-artist O B-playlist_owner B-playlist I-playlist O 
+can you put the artist giovanni giacomo gastoldi onto the chill out music playlist	AddToPlaylist	O O O O B-music_item B-artist I-artist I-artist O O B-playlist I-playlist I-playlist O 
+add the album to the hot 50 playlist 	AddToPlaylist	O O B-music_item O O B-playlist I-playlist O 
+add the artist pete murray to my relaxing playlist	AddToPlaylist	O O B-music_item B-artist I-artist O B-playlist_owner B-playlist O 
+add the track to the drum & breaks playlist 	AddToPlaylist	O O B-music_item O O B-playlist I-playlist I-playlist O 
+for my fantastic workout can you add sara bareilles	AddToPlaylist	O B-playlist_owner B-playlist I-playlist O O O B-artist I-artist 
+add the boy george track to the emo forever playlist 	AddToPlaylist	O O B-artist I-artist B-music_item O O B-playlist I-playlist O 
+add ted heath to the road trip playlist 	AddToPlaylist	O B-artist I-artist O O B-playlist I-playlist O 
+can you add last of the ghetto astronauts to the playlist called black sabbath the dio years	AddToPlaylist	O O O B-entity_name I-entity_name I-entity_name I-entity_name I-entity_name O O O O B-playlist I-playlist I-playlist I-playlist I-playlist 
+add this artist to showstopper being mary jane	AddToPlaylist	O O B-music_item O B-playlist I-playlist I-playlist I-playlist 
+put the artist onto top latin alternative 	AddToPlaylist	O O B-music_item O B-playlist I-playlist I-playlist 
+add michael wittig music to country icon playlist	AddToPlaylist	O B-artist I-artist O O B-playlist I-playlist O 
+add highway patrolman in my playlist this is al green	AddToPlaylist	O B-entity_name I-entity_name O B-playlist_owner O B-playlist I-playlist I-playlist I-playlist 
+add richard mcnamara newest song to the just smile playlist	AddToPlaylist	O B-artist I-artist O B-music_item O O B-playlist I-playlist O 
+add annesley malewana album to playlist indietronic	AddToPlaylist	O B-artist I-artist B-music_item O O B-playlist 
+add the artist to my dishwashing playlist 	AddToPlaylist	O O B-music_item O B-playlist_owner B-playlist O 
+add this artist to fairy tales playlist	AddToPlaylist	O O B-music_item O B-playlist I-playlist O 
+add muzika za decu to my crash course playlist	AddToPlaylist	O B-entity_name I-entity_name I-entity_name O B-playlist_owner B-playlist I-playlist O 
+add a derek watkins tune to this is johnny cash	AddToPlaylist	O O B-artist I-artist B-music_item O B-playlist I-playlist I-playlist I-playlist 
+add our little corner of the world music from gilmore girls to my the funny thing about football is playlist 	AddToPlaylist	O B-entity_name I-entity_name I-entity_name I-entity_name I-entity_name I-entity_name I-entity_name I-entity_name I-entity_name I-entity_name O B-playlist_owner B-playlist I-playlist I-playlist I-playlist I-playlist I-playlist O 
+add the current track to my this is tchaikovsky playlist	AddToPlaylist	O O O B-music_item O B-playlist_owner B-playlist I-playlist I-playlist O 
+put abe laboriel onto the escapada playlist 	AddToPlaylist	O B-artist I-artist O O B-playlist O 
+add abacab to beryl s party on fridays playlist	AddToPlaylist	O B-entity_name O B-playlist_owner I-playlist_owner B-playlist I-playlist I-playlist O 
+please add this track by paul mcguigan to the deep house playlist 	AddToPlaylist	O O O B-music_item O B-artist I-artist O O B-playlist I-playlist O 
+can you add the current tune to my calm before the storm playlist	AddToPlaylist	O O O O O B-music_item O B-playlist_owner B-playlist I-playlist I-playlist I-playlist O 
+please add the image of you to my playlist crate diggers anonymous	AddToPlaylist	O O B-entity_name I-entity_name I-entity_name I-entity_name O B-playlist_owner O B-playlist I-playlist I-playlist 
+add a track to jazzy dinner	AddToPlaylist	O O B-music_item O B-playlist I-playlist 
+add the album to the hipster soul playlist 	AddToPlaylist	O O B-music_item O O B-playlist I-playlist O 
+add this tune to my sleepify playlist	AddToPlaylist	O O B-music_item O B-playlist_owner B-playlist O 
+add jack white to my playlist this is shakira	AddToPlaylist	O B-artist I-artist O B-playlist_owner O B-playlist I-playlist I-playlist 
+add tommy johnson to the metalsucks playlist	AddToPlaylist	O B-artist I-artist O B-playlist I-playlist I-playlist 
+add the chris clark tune to my women of the blues playlist 	AddToPlaylist	O O B-artist I-artist B-music_item O B-playlist_owner B-playlist I-playlist I-playlist I-playlist O 
+add an artist to jukebox boogie rhythm & blues	AddToPlaylist	O O B-music_item O B-playlist I-playlist I-playlist I-playlist I-playlist 
+add this artist to my electronic bliss playlist	AddToPlaylist	O O B-music_item O B-playlist_owner B-playlist I-playlist O 
+i need to add to my infinite indie folk list the works of rahim shah	AddToPlaylist	O O O O O B-playlist_owner B-playlist I-playlist I-playlist O O O O B-artist I-artist 
+add martin barre to my punk unplugged playlist 	AddToPlaylist	O B-artist I-artist O B-playlist_owner B-playlist I-playlist O 
+add tierney sutton to my novedades viernes sudamérica playlist	AddToPlaylist	O B-artist I-artist O B-playlist_owner B-playlist I-playlist I-playlist O 
+add this tune to dorthy s 80 s party playlist	AddToPlaylist	O O B-music_item O B-playlist_owner I-playlist_owner B-playlist I-playlist I-playlist O 
+a very cellular song needs to be added to my masters of metal playlist	AddToPlaylist	B-entity_name I-entity_name I-entity_name I-entity_name O O O O O B-playlist_owner B-playlist I-playlist I-playlist O 
+add toyan to my epic gaming playlist 	AddToPlaylist	O B-artist O B-playlist_owner B-playlist I-playlist O 
+add the song to the mac  n cheese playlist 	AddToPlaylist	O O B-music_item O O B-playlist I-playlist I-playlist O 
+add this artist to my spotlight on country 2016 playlist	AddToPlaylist	O O B-music_item O B-playlist_owner B-playlist I-playlist I-playlist I-playlist O 
+add a song to my playlist madden nfl 16	AddToPlaylist	O O B-music_item O B-playlist_owner O B-playlist I-playlist I-playlist 
+add emilie autumn to my nação reggae playlist 	AddToPlaylist	O B-artist I-artist O B-playlist_owner B-playlist I-playlist O 
+add farhad darya songs in virales de siempre	AddToPlaylist	O B-artist I-artist O O B-playlist I-playlist I-playlist 
+add a song in my all out 60s	AddToPlaylist	O O B-music_item O B-playlist_owner B-playlist I-playlist I-playlist 
+add we have a theme song to my house afterwork playlist	AddToPlaylist	O B-entity_name I-entity_name I-entity_name I-entity_name I-entity_name O B-playlist_owner B-playlist I-playlist O 
+add the song to my we everywhere playlist	AddToPlaylist	O O B-music_item O B-playlist_owner B-playlist I-playlist O 
+add roel van velzen to my party of the century playlist 	AddToPlaylist	O B-artist I-artist I-artist O B-playlist_owner B-playlist I-playlist I-playlist I-playlist O 
+add the artist to the political punks playlist 	AddToPlaylist	O O B-music_item O O B-playlist I-playlist O 
+add the album to my club hits playlist 	AddToPlaylist	O O B-music_item O B-playlist_owner B-playlist I-playlist O 
+book a reservation for my babies and i	BookRestaurant	O O O O B-party_size_description I-party_size_description I-party_size_description I-party_size_description 
+book a reservation for a restaurant not far from ma	BookRestaurant	O O O O O B-restaurant_type B-spatial_relation I-spatial_relation O B-state 
+i would like to book a restaurant in tanzania that is within walking distance for my mom and i	BookRestaurant	O O O O O O B-restaurant_type O B-country O O B-spatial_relation I-spatial_relation I-spatial_relation O B-party_size_description I-party_size_description I-party_size_description I-party_size_description 
+book a reservation for an oyster bar	BookRestaurant	O O O O O B-restaurant_type I-restaurant_type 
+book a reservation for 6 people for a creole tavern in montenegro	BookRestaurant	O O O O B-party_size_number O O O B-cuisine B-restaurant_type O B-country 
+i need a table in sacaton at a gluten free restaurant	BookRestaurant	O O O O O B-city O O B-cuisine I-cuisine B-restaurant_type 
+book sot for me and my grandfather nearby west reading	BookRestaurant	O O O B-party_size_description I-party_size_description I-party_size_description I-party_size_description B-spatial_relation B-poi I-poi 
+book me and my nieces a reservation for a seafood restaurant in cle elum  ne on ascension day	BookRestaurant	O B-party_size_description I-party_size_description I-party_size_description I-party_size_description O O O O B-served_dish B-restaurant_type O B-city I-city B-state O B-timeRange I-timeRange 
+book spot for two at city tavern	BookRestaurant	O O O B-party_size_number O B-restaurant_name I-restaurant_name 
+i want to book a brasserie for 3 people in netherlands antilles 	BookRestaurant	O O O O O B-restaurant_type O B-party_size_number O O B-country I-country 
+book me a reservation for the best bistro	BookRestaurant	O O O O O O B-sort B-restaurant_type 
+book the best table in tanzania for 5 people at a diner	BookRestaurant	O O B-sort O O B-country O B-party_size_number O O O B-restaurant_type 
+i want to book a joint in a  spa 	BookRestaurant	O O O O O B-restaurant_type O O B-facility 
+book a gastropub that serves turkish food for 4 people	BookRestaurant	O O B-restaurant_type O O B-cuisine O O B-party_size_number O 
+book spot for 7 at an indoor restaurant in mp now	BookRestaurant	O O O B-party_size_number O O B-facility B-restaurant_type O B-state B-timeRange 
+book a table in fiji for zero a m	BookRestaurant	O O O O B-country O B-timeRange I-timeRange I-timeRange 
+i want to book a restaurant for five people in sri lanka 	BookRestaurant	O O O O O B-restaurant_type O B-party_size_number O O B-country I-country 
+i need a table for 5 at a highly rated gastropub in concord mn	BookRestaurant	O O O O O B-party_size_number O O B-sort I-sort B-restaurant_type O B-city B-state 
+i want to book oregon electric station in north city 	BookRestaurant	O O O O B-restaurant_name I-restaurant_name I-restaurant_name O B-city I-city 
+i need a table for 4 please confirm the reservation 	BookRestaurant	O O O O O B-party_size_number O O O O 
+book a popular restaurant for 5 people	BookRestaurant	O O B-sort B-restaurant_type O B-party_size_number O 
+i want to book a joint close by the naomi s hostel for a meal for 8 people 	BookRestaurant	O O O O O B-restaurant_type B-spatial_relation I-spatial_relation O B-poi I-poi I-poi O O B-timeRange O B-party_size_number O 
+i want to eat a delicatessen in thirteen hours that serves eastern european food	BookRestaurant	O O O O O B-restaurant_type B-timeRange I-timeRange I-timeRange O O B-cuisine I-cuisine O 
+book a reservation for nine people at a bakery in nunez	BookRestaurant	O O O O B-party_size_number O O O B-restaurant_type O B-city 
+book a reservation at tavern for noodle	BookRestaurant	O O O O B-restaurant_type O B-served_dish 
+book spot for 4 in somalia	BookRestaurant	O O O B-party_size_number O B-country 
+i want to book albany pump station in buckholts washington now for a party of 9 	BookRestaurant	O O O O B-restaurant_name I-restaurant_name I-restaurant_name O B-city B-state B-timeRange O O O O B-party_size_number 
+i want to book a taverna in archer city for this spring for nine people 	BookRestaurant	O O O O O B-restaurant_type O B-city I-city O B-timeRange I-timeRange O B-party_size_number O 
+i want to book a top-rated brasserie for 7 people 	BookRestaurant	O O O O O B-sort B-restaurant_type O B-party_size_number O 
+book a reservation for 8 people in wardville  kansas	BookRestaurant	O O O O B-party_size_number O O B-city B-state 
+table for breadline cafe in minnesota next friday	BookRestaurant	O O B-restaurant_name I-restaurant_name O B-state B-timeRange I-timeRange 
+i want to book a restaurant in niger for seven people 	BookRestaurant	O O O O O B-restaurant_type O B-country O B-party_size_number O 
+book spot for 9	BookRestaurant	O O O B-party_size_number 
+book me a reservation for a pub in cormorant for a party of nine	BookRestaurant	O O O O O O B-restaurant_type O B-city O O O O B-party_size_number 
+book spot for my nieces and i at a tea house	BookRestaurant	O O O B-party_size_description I-party_size_description I-party_size_description I-party_size_description O O B-restaurant_type I-restaurant_type 
+i want to book a jewish restaurant in gambia 	BookRestaurant	O O O O O B-cuisine B-restaurant_type O B-country 
+book a reservation for the dome  edinburgh close to brooklawn	BookRestaurant	O O O O B-restaurant_name I-restaurant_name I-restaurant_name B-spatial_relation O B-poi 
+book spot for 1 at town of ramsgate in merit	BookRestaurant	O O O B-party_size_number O B-restaurant_name I-restaurant_name I-restaurant_name O B-city 
+book a spot for me and kathrine  at smithville	BookRestaurant	O O O O B-party_size_description I-party_size_description I-party_size_description O B-city 
+i want to book a restaurant for my father in law and i in buckner a year from now 	BookRestaurant	O O O O O B-restaurant_type O B-party_size_description I-party_size_description I-party_size_description I-party_size_description I-party_size_description I-party_size_description O B-city B-timeRange I-timeRange I-timeRange I-timeRange 
+book a restaurant reservation in 6 weeks	BookRestaurant	O O B-restaurant_type O B-timeRange I-timeRange I-timeRange 
+book a reservation for a bar with a spa nearby id	BookRestaurant	O O O O O B-restaurant_type O O B-facility B-spatial_relation B-state 
+book spot for four at cliff house  san francisco in martinique	BookRestaurant	O O O B-party_size_number O B-restaurant_name I-restaurant_name I-restaurant_name I-restaurant_name O B-country 
+i need a table for 4 in saint helena at settha palace hotel	BookRestaurant	O O O O O B-party_size_number O B-country I-country O B-restaurant_name I-restaurant_name I-restaurant_name 
+i want to book a restaurant in frenier 12 years from now for 4 people 	BookRestaurant	O O O O O B-restaurant_type O B-city B-timeRange I-timeRange I-timeRange I-timeRange O B-party_size_number O 
+book seven in neighboring moorpark	BookRestaurant	O B-party_size_number O B-spatial_relation B-city 
+i want to eat by five pm in ne for a six people	BookRestaurant	O O O O O B-timeRange I-timeRange O B-state O O B-party_size_number O 
+i want to book tupelo honey cafe in new jersey for five people 	BookRestaurant	O O O O B-restaurant_name I-restaurant_name I-restaurant_name O B-state I-state O B-party_size_number O 
+book a reservation for two at mickies dairy bar in weedsport	BookRestaurant	O O O O B-party_size_number O B-restaurant_name I-restaurant_name I-restaurant_name O B-city 
+book a table at a fried chicken restaurant	BookRestaurant	O O O O O B-restaurant_name I-restaurant_name I-restaurant_name 
+book spot for mavis  sheila and i in syria at elevenses	BookRestaurant	O O O B-party_size_description I-party_size_description I-party_size_description I-party_size_description O B-country O B-timeRange 
+can you book me a table at windows on the world in cokeville   mi	BookRestaurant	O O O O O O O B-restaurant_name I-restaurant_name I-restaurant_name I-restaurant_name O B-city B-state 
+book me a table for 5 this year at cherwell boathouse	BookRestaurant	O O O O O B-party_size_number B-timeRange I-timeRange O B-restaurant_name I-restaurant_name 
+book spot for six  at 8 pm at a coffeehouse in ne that serves hog fry	BookRestaurant	O O O B-party_size_number O B-timeRange I-timeRange O O B-restaurant_type O B-state O O B-served_dish I-served_dish 
+i want to book a restaurant close-by in inman for five people 	BookRestaurant	O O O O O B-restaurant_type B-spatial_relation O B-city O B-party_size_number O 
+i need a table at eddie s attic in nevada for one	BookRestaurant	O O O O O B-restaurant_name I-restaurant_name I-restaurant_name O B-state O B-party_size_number 
+book a reservation for an osteria restaurant for 4 people on november 4	BookRestaurant	O O O O O B-restaurant_type O O B-party_size_number O O B-timeRange I-timeRange 
+i want to book a top-rated restaurant close by in la for me  rebecca and loraine on 2/6/2020 	BookRestaurant	O O O O O B-sort B-restaurant_type B-spatial_relation O O B-state O B-party_size_description I-party_size_description I-party_size_description I-party_size_description O B-timeRange 
+book a reservation for 1 at a diner in wi	BookRestaurant	O O O O B-party_size_number O O B-restaurant_type O B-state 
+book a reservation for 5 people at the top-rated brasserie restaurant	BookRestaurant	O O O O B-party_size_number O O O B-sort B-restaurant_type O 
+book a table on 1/20/2023 for 5 people in mh	BookRestaurant	O O O O B-timeRange O B-party_size_number O O B-state 
+book a table near pat s college	BookRestaurant	O O O B-spatial_relation B-poi I-poi I-poi 
+i want to book a steakhouse in vimy ridge 	BookRestaurant	O O O O O B-restaurant_type O B-city I-city 
+i want a table at james d  conrey house in urbank california	BookRestaurant	O O O O O B-restaurant_name I-restaurant_name I-restaurant_name I-restaurant_name O B-city B-state 
+like to book a seat in monaco for the yankee doodle coffee shop	BookRestaurant	O O O O O O B-country O O B-restaurant_name I-restaurant_name I-restaurant_name I-restaurant_name 
+i want to book a table in a restaurant in bouvet island 	BookRestaurant	O O O O O O O O B-restaurant_type O B-country I-country 
+i would like to book a restaurant for souvlaki cuisine in the state of ne	BookRestaurant	O O O O O O B-restaurant_type O B-cuisine O O O O O B-state 
+book a reservation for 10 people at an oyster bar with a pool within the same area of cowansburg for 10 pm	BookRestaurant	O O O O B-party_size_number O O O B-restaurant_type I-restaurant_type O O B-facility B-spatial_relation I-spatial_relation I-spatial_relation I-spatial_relation O B-city O B-timeRange I-timeRange 
+book a reservation for velma  ana and rebecca for an american pizzeria at 5 am in ma	BookRestaurant	O O O O B-party_size_description I-party_size_description I-party_size_description I-party_size_description O O B-cuisine B-restaurant_type O B-timeRange I-timeRange O B-state 
+book a spot for 4 in oklahoma at south street diner	BookRestaurant	O O O O B-party_size_number O B-state O B-restaurant_name I-restaurant_name I-restaurant_name 
+book a reservation for my mommy and i at a restaurant in central african republic	BookRestaurant	O O O O B-party_size_description I-party_size_description I-party_size_description I-party_size_description O O B-restaurant_type O B-country I-country I-country 
+book a reservation for five people for a tatar taverna in sargents	BookRestaurant	O O O O B-party_size_number O O O B-cuisine B-restaurant_type O B-city 
+phyllis ward and veronica need a table at a restaurant in 152 days	BookRestaurant	B-party_size_description I-party_size_description I-party_size_description I-party_size_description O O O O O B-restaurant_type B-timeRange I-timeRange I-timeRange 
+book a reservation for ten at a restaurant in ohio	BookRestaurant	O O O O B-party_size_number O O B-restaurant_type O B-state 
+i want to book a tea house that serves salade far from here at midnight in panama for two people 	BookRestaurant	O O O O O B-restaurant_type I-restaurant_type O O B-served_dish B-spatial_relation O O O B-timeRange O B-country O B-party_size_number O 
+i want to book a food truck for seven people in the republic of the congo 	BookRestaurant	O O O O O B-restaurant_type I-restaurant_type O B-party_size_number O O O B-country I-country I-country I-country 
+i want to book a restaurant for ten people 	BookRestaurant	O O O O O B-restaurant_type O B-party_size_number O 
+lets eat near oakfield 17 seconds from now at ted peters famous smoked fish	BookRestaurant	O O B-spatial_relation B-city B-timeRange I-timeRange I-timeRange I-timeRange O B-restaurant_name I-restaurant_name I-restaurant_name I-restaurant_name I-restaurant_name 
+book sot for 7 at a restaurant that serves european in stringtown on feb  the 28th  2034	BookRestaurant	O O O B-party_size_number O O B-restaurant_type O O B-cuisine O B-city O B-timeRange I-timeRange I-timeRange I-timeRange 
+book a restaurant for six at an outdoor cafe in åland	BookRestaurant	O O B-restaurant_type O B-party_size_number O O B-facility O O B-country 
+book a table for 12 am  at our step mother s secondary residence within walking distance for one	BookRestaurant	O O O O B-timeRange I-timeRange O B-poi I-poi I-poi I-poi I-poi I-poi B-spatial_relation I-spatial_relation I-spatial_relation O B-party_size_number 
+please book me a table at a pizzeria with a parking facility in ghana 	BookRestaurant	O O O O O O O B-restaurant_type O O B-facility O O B-country 
+book spot for four at a indoor pub within the same area of louisiana in one minute 	BookRestaurant	O O O B-party_size_number O O B-facility B-restaurant_type B-spatial_relation I-spatial_relation I-spatial_relation I-spatial_relation O B-state B-timeRange I-timeRange I-timeRange 
+please book me a restaurant	BookRestaurant	O O O O B-restaurant_type 
+book a reservation for me and my step brother at amt coffee in lakemoor	BookRestaurant	O O O O B-party_size_description I-party_size_description I-party_size_description I-party_size_description I-party_size_description O B-restaurant_name I-restaurant_name O B-city 
+i want to book a churrascaria in romeoville at ten a m for four people 	BookRestaurant	O O O O O B-restaurant_type O B-city O B-timeRange I-timeRange I-timeRange O B-party_size_number O 
+table for 5 a m  at baker s keyboard lounge	BookRestaurant	O O B-timeRange I-timeRange I-timeRange O B-restaurant_name I-restaurant_name I-restaurant_name I-restaurant_name 
+please book me a table at a bistro which serves lorna doone 	BookRestaurant	O O O O O O O B-restaurant_type O O B-served_dish I-served_dish 
+i want to book a restaurant for six people in wagstaff ak 	BookRestaurant	O O O O O B-restaurant_type O B-party_size_number O O B-city B-state 
+i would like to book a highly rated restaurant for a party of ten 	BookRestaurant	O O O O O O B-sort I-sort B-restaurant_type O O O O B-party_size_number 
+i want to book a sundanese gastropub nearby in texas for 3 people on 5/20/2025 	BookRestaurant	O O O O O B-cuisine B-restaurant_type B-spatial_relation O B-state O B-party_size_number O O B-timeRange 
+book a party of five at seagoville for 06:42	BookRestaurant	O O O O B-party_size_number O B-city O B-timeRange 
+book spot for 9 at thurmont	BookRestaurant	O O O B-party_size_number O B-city 
+i want to book a restaurant in sixteen seconds for 5 people in gold point montana 	BookRestaurant	O O O O O B-restaurant_type B-timeRange I-timeRange I-timeRange O B-party_size_number O O B-city I-city B-state 
+i want to eat in ramona	BookRestaurant	O O O O O B-city 
+book a party at their campus within the same area for churrascaria	BookRestaurant	O O O O B-poi I-poi B-spatial_relation I-spatial_relation I-spatial_relation I-spatial_relation O B-restaurant_type 
+book me a reservation for a party of 3 at a pub in northern mariana islands	BookRestaurant	O O O O O O O O B-party_size_number O O B-restaurant_type O B-country I-country I-country 
+i want to book a bougatsa restaurant in next year nearby penn for three people 	BookRestaurant	O O O O O B-cuisine B-restaurant_type O B-timeRange I-timeRange B-spatial_relation B-city O B-party_size_number O 
+book a reservation for nine people at the best pub nearby tangier in six months	BookRestaurant	O O O O B-party_size_number O O O B-sort B-restaurant_type B-spatial_relation B-city B-timeRange I-timeRange I-timeRange 
+need a table somewhere in quarryville 14 hours from now	BookRestaurant	O O O O O B-city B-timeRange I-timeRange I-timeRange I-timeRange 
+what will the weather be faraway from here	GetWeather	O O O O O B-spatial_relation O B-current_location 
+will there be fog in tahquamenon falls state park	GetWeather	O O O B-condition_description O B-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi 
+tell me the weather forecast for gibsland	GetWeather	O O O O O O B-city 
+is there a storm now in nc	GetWeather	O O O B-condition_description B-timeRange O B-state 
+what will the weather be in monument of lihula on december the 5th	GetWeather	O O O O O O B-geographic_poi I-geographic_poi I-geographic_poi O B-timeRange I-timeRange I-timeRange 
+weather next year in dominica	GetWeather	O B-timeRange I-timeRange O B-country 
+when will it be hot here	GetWeather	O O O O B-condition_temperature B-current_location 
+what will the weather be in 1 day in kuwait	GetWeather	O O O O O B-timeRange I-timeRange I-timeRange O B-country 
+what kind of weather will be in ukraine one minute from now	GetWeather	O O O O O O O B-country B-timeRange I-timeRange I-timeRange I-timeRange 
+humidity in olvey new hampshire	GetWeather	B-condition_description O B-city B-state I-state 
+what s the weather going to be in ut	GetWeather	O O O O O O O O B-state 
+humidity not far from colorado city on november the 7th  2024	GetWeather	B-condition_description B-spatial_relation I-spatial_relation O B-city I-city O B-timeRange I-timeRange I-timeRange I-timeRange 
+what is the forecast for wyoming at stanardsville during the storm	GetWeather	O O O O O B-state O B-city O O B-condition_description 
+what will the weather be in north carolina	GetWeather	O O O O O O B-state I-state 
+what is the forecast starting 11 weeks from now nearby the state of wisconsin	GetWeather	O O O O O B-timeRange I-timeRange I-timeRange I-timeRange B-spatial_relation O O O B-state 
+will it be rainy at sunrise in ramey saudi arabia	GetWeather	O O O B-condition_description O B-timeRange O B-city B-country I-country 
+check the forecast for nebraska 	GetWeather	O O O O B-state 
+will it be warmer in north korea at nineteen o clock	GetWeather	O O O B-condition_temperature O B-country I-country O B-timeRange I-timeRange I-timeRange 
+let me know the weather forecast around ten pm faraway from here in park narodowy brimstone hill fortress 	GetWeather	O O O O O O O B-timeRange I-timeRange B-spatial_relation O B-current_location O B-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi 
+will it be stormy in the ouachita national forest	GetWeather	O O O B-condition_description O O B-geographic_poi I-geographic_poi I-geographic_poi 
+tell me if it will be snowy 8 hours from now in mount airy  vi	GetWeather	O O O O O O B-condition_description B-timeRange I-timeRange I-timeRange I-timeRange O B-city I-city B-state 
+what will the weather be nineteen hours from now neighboring saint kitts and nevis	GetWeather	O O O O O B-timeRange I-timeRange I-timeRange I-timeRange B-spatial_relation B-country I-country I-country I-country 
+will there be hail on 11/12/2036 in singapore	GetWeather	O O O B-condition_description O B-timeRange O B-country 
+will it be colder here in 48 and a half weeks	GetWeather	O O O B-condition_temperature B-current_location B-timeRange I-timeRange I-timeRange I-timeRange I-timeRange I-timeRange 
+what s the weather going to be in knobel	GetWeather	O O O O O O O O B-city 
+what will the weather be in dane on sep  the fifth  2030	GetWeather	O O O O O O B-city O B-timeRange I-timeRange I-timeRange I-timeRange 
+what will the weather be in ohio	GetWeather	O O O O O O B-state 
+i need to know the weather for jan  the 3rd in mexico when i go to port vue	GetWeather	O O O O O O O B-timeRange I-timeRange I-timeRange O B-country O O O O B-city I-city 
+what is the forecast for ōtone prefectural natural park in 1 hour and within the same area	GetWeather	O O O O O B-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi B-timeRange I-timeRange I-timeRange O B-spatial_relation I-spatial_relation I-spatial_relation I-spatial_relation 
+what kind of weather is forecast around one pm near vatican	GetWeather	O O O O O O O B-timeRange I-timeRange B-spatial_relation B-country 
+will it be chilly in weldona	GetWeather	O O O B-condition_temperature O B-city 
+will it be colder in virgin islands national park	GetWeather	O O O B-condition_temperature O B-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi 
+will it be hot at 13:19 in de funiak springs serbia and montenegro	GetWeather	O O O B-condition_temperature O B-timeRange O B-city I-city I-city B-country I-country I-country 
+what is the weather going to be like in virginia on st  patrick s day	GetWeather	O O O O O O O O O B-state O B-timeRange I-timeRange I-timeRange I-timeRange 
+weather in kaneville maryland	GetWeather	O O B-city B-state 
+when is sunrise for ar	GetWeather	O O B-timeRange O B-state 
+what will the weather be not far from here on october the nineteenth  2026	GetWeather	O O O O O B-spatial_relation I-spatial_relation O B-current_location O B-timeRange I-timeRange I-timeRange I-timeRange 
+what is the forecast for waurika in samoa	GetWeather	O O O O O B-city O B-country 
+tell me the weather forecast here	GetWeather	O O O O O B-current_location 
+what is the weather forecast nearby nicodemus	GetWeather	O O O O O B-spatial_relation B-city 
+what will the weather be in nov  in brookneal	GetWeather	O O O O O O B-timeRange O B-city 
+will it be colder four months from now in suwanee ak	GetWeather	O O O B-condition_temperature B-timeRange I-timeRange I-timeRange I-timeRange O B-city B-state 
+what is the weather forecast for burundi	GetWeather	O O O O O O B-country 
+what s the weather in benton city	GetWeather	O O O O O B-city I-city 
+what will the weather be in ky on oct  16  2036	GetWeather	O O O O O O B-state O B-timeRange I-timeRange I-timeRange 
+will the sun be out in 1 minute in searcy  uganda	GetWeather	O O B-condition_description O O B-timeRange I-timeRange I-timeRange O B-city B-country 
+what is the weather here	GetWeather	O O O O B-current_location 
+what will the weather be one second from now in chad	GetWeather	O O O O O B-timeRange I-timeRange I-timeRange I-timeRange O B-country 
+what kind of weather is forecast in ms now	GetWeather	O O O O O O O B-state B-timeRange 
+what is the forecast for la for freezing 	GetWeather	O O O O O B-state O B-condition_temperature 
+how cold will it be here in 1 second 	GetWeather	O B-condition_temperature O O O B-current_location B-timeRange I-timeRange I-timeRange 
+what is the forecast for hotter weather at southford falls state park	GetWeather	O O O O O B-condition_temperature O O B-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi 
+what is the overcast forecast for the current position starting on jul  19  2030	GetWeather	O O O B-condition_description O O O B-current_location I-current_location O O B-timeRange I-timeRange I-timeRange 
+what is the forecast for morocco  at lake ozark on december seventeenth  2022	GetWeather	O O O O O B-country O B-city I-city O B-timeRange I-timeRange I-timeRange 
+what will the humidity be in the current spot at 15:19:29	GetWeather	O O O B-condition_description O O O B-current_location I-current_location O B-timeRange 
+what is the forecast in nicodemus and nearby	GetWeather	O O O O O B-city O B-spatial_relation 
+what is the weather going to be like in benton colorado in 2 and a half months	GetWeather	O O O O O O O O O B-city B-state B-timeRange I-timeRange I-timeRange I-timeRange I-timeRange I-timeRange 
+what s the weather forecast for bothe-napa valley state park close by february 20	GetWeather	O O O O O O B-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi B-spatial_relation I-spatial_relation B-timeRange I-timeRange 
+what is the forecast for beginning on nov  17 for franklinville	GetWeather	O O O O O O O B-timeRange I-timeRange O B-city 
+what s the forecast for sep  26 in emerado saint pierre and miquelon	GetWeather	O O O O O B-timeRange I-timeRange O B-city B-country I-country I-country I-country 
+will there be a blizzard next winter in visalia  idaho	GetWeather	O O O O B-condition_description B-timeRange I-timeRange O B-city B-state 
+will it be warmer in the district of columbia on may 25  2033	GetWeather	O O O B-condition_temperature O O B-state I-state I-state O B-timeRange I-timeRange I-timeRange 
+what will the weather be here on dec  7th	GetWeather	O O O O O B-current_location O B-timeRange I-timeRange 
+what is the forecast for colder temps beginning on law day here	GetWeather	O O O O O B-condition_temperature O O O B-timeRange I-timeRange B-current_location 
+what s the weather like in tyonek  new jersey	GetWeather	O O O O O O B-city B-state I-state 
+what is the forecast for here for blizzard conditions at five pm	GetWeather	O O O O O B-current_location O B-condition_description O O B-timeRange I-timeRange 
+will there be a storm in gibsonia at 8 p m	GetWeather	O O O O B-condition_description O B-city O B-timeRange I-timeRange I-timeRange 
+what is the cold condition of our current position for tomorrow	GetWeather	O O O B-condition_temperature O O O B-current_location I-current_location O B-timeRange 
+what will the weather be in hialeah gardens on october the 24th	GetWeather	O O O O O O B-city I-city O B-timeRange I-timeRange I-timeRange 
+will it be freezing today in delaware and lehigh national heritage corridor	GetWeather	O O O B-condition_temperature B-timeRange O B-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi 
+what is the forecast in admire in tx starting at seventeen 	GetWeather	O O O O O B-city O B-state O O B-timeRange 
+what is the forecast in north carolina for edgemoor	GetWeather	O O O O O B-state I-state O B-city 
+what is the forecast for costa rica	GetWeather	O O O O O B-country I-country 
+need weather for parc national tolhuaca to see if it will be fog today	GetWeather	O O O B-geographic_poi I-geographic_poi I-geographic_poi O O O O O O B-condition_description O 
+weather in walden russia on 12/26/2018	GetWeather	O O B-city B-country O B-timeRange 
+what s the humidity here right now	GetWeather	O O O B-condition_description B-current_location O B-timeRange 
+how s the weather at petit manan national wildlife refuge and nearby right now	GetWeather	O O O O O B-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi O B-spatial_relation O B-timeRange 
+what is the forecast for lansford for temperate weather	GetWeather	O O O O O B-city O B-condition_temperature O 
+overcast on state holiday in pawling nature reserve  and neighboring places	GetWeather	B-condition_description O B-timeRange I-timeRange O B-geographic_poi I-geographic_poi I-geographic_poi O B-spatial_relation O 
+i need the weather in wakarusa	GetWeather	O O O O O B-city 
+tell me the forecast for 6 am in tatra-nationalpark	GetWeather	O O O O O B-timeRange I-timeRange O B-geographic_poi 
+tell me the weather forecast for ut on thursday	GetWeather	O O O O O O B-state O B-timeRange 
+what is the forecast for turtle islands national park	GetWeather	O O O O O B-geographic_poi I-geographic_poi I-geographic_poi I-geographic_poi 
+will it be hotter in pr at 23 o clock	GetWeather	O O O B-condition_temperature O B-state O B-timeRange I-timeRange I-timeRange 
+weather in two hours  in uzbekistan	GetWeather	O B-timeRange I-timeRange I-timeRange O B-country 
+what is the forecast for this afternoon for blizzard conditions in dieterich chad	GetWeather	O O O O O O B-timeRange O B-condition_description O O B-city B-country 
+how s the weather here at two am	GetWeather	O O O O B-current_location O B-timeRange I-timeRange 
+will custer national forest be chillier at seven pm	GetWeather	O B-geographic_poi I-geographic_poi I-geographic_poi O B-condition_temperature O B-timeRange I-timeRange 
+what is the forecast for starting at three a m in two buttes for warm weather	GetWeather	O O O O O O O B-timeRange I-timeRange I-timeRange O B-city I-city O B-condition_temperature O 
+what s the weather in fox chapel	GetWeather	O O O O O B-city I-city 
+what is the rain forecast for one hour from now in south korea	GetWeather	O O O B-condition_description O O B-timeRange I-timeRange I-timeRange I-timeRange O B-country I-country 
+tell me the weather forecast here	GetWeather	O O O O O B-current_location 
+will there be a cloud in vi in 14 minutes 	GetWeather	O O O O B-condition_description O B-state B-timeRange I-timeRange I-timeRange 
+how much colder will it be not far from utah around 3 am	GetWeather	O O B-condition_temperature O O O B-spatial_relation I-spatial_relation O B-state O B-timeRange I-timeRange 
+will it be chilly midday in cresbard afghanistan	GetWeather	O O O B-condition_temperature B-timeRange O B-city B-country 
+what will the weather be in sarygamyş sanctuary on august 21  2035	GetWeather	O O O O O O B-geographic_poi I-geographic_poi O B-timeRange I-timeRange I-timeRange 
+will it be rainy in tenino	GetWeather	O O O B-condition_description O B-city 
+will it be hot in the netherlands on february 16th	GetWeather	O O O B-condition_temperature O O B-country O B-timeRange I-timeRange 
+where is belgium located	GetWeather	O O B-country O 
+what will the weather be in milleville beach	GetWeather	O O O O O O B-city I-city 
+can you put on like a hurricane by paul landers	PlayMusic	O O O O B-album I-album I-album O B-artist I-artist 
+play the happy blues by ronnie wood 	PlayMusic	O B-album I-album I-album O B-artist I-artist 
+play the newest melody on last fm by eddie vinson 	PlayMusic	O O B-sort B-music_item O B-service I-service O B-artist I-artist 
+use groove shark to play music	PlayMusic	O B-service I-service O O O 
+please play something good from u-roy   any song from 1975 on zvooq will do 	PlayMusic	O O O B-sort O B-artist O B-music_item O B-year O B-service O O 
+play a symphony from 2013 	PlayMusic	O O B-music_item O B-year 
+let me hear the good songs from james iha	PlayMusic	O O O O B-sort O O B-artist I-artist 
+play my inventive playlist	PlayMusic	O O B-playlist O 
+i want to play music from iheart	PlayMusic	O O O O O O B-service 
+play subconscious lobotomy from jennifer paull 	PlayMusic	O B-album I-album O B-artist I-artist 
+i want to hear a seventies sound track 	PlayMusic	O O O O O B-year B-music_item I-music_item 
+play a john maher track	PlayMusic	O O B-artist I-artist B-music_item 
+please play something from dihan slabbert that s on the top fifty	PlayMusic	O O O O B-artist I-artist O O O O B-sort I-sort 
+please play something catchy on youtube	PlayMusic	O O O B-playlist O B-service 
+play something from 2004 by imogen heap on spotify	PlayMusic	O O O B-year O B-artist I-artist O B-service 
+play seventies music please 	PlayMusic	O B-year O O 
+play music from the artist sean yseult and sort it through top-50	PlayMusic	O O O O O B-artist I-artist O O O O B-sort 
+play anything jd natasha did in the thirties	PlayMusic	O O B-artist I-artist O O O B-year 
+play music off netflix 	PlayMusic	O O O B-service 
+nineties songs on zvooq	PlayMusic	B-year O O B-service 
+open itunes and play ben burnley ready to die	PlayMusic	O B-service O O B-artist I-artist B-album I-album I-album 
+play an ep by zak starkey 	PlayMusic	O O B-music_item O B-artist I-artist 
+play an album from nithyasree mahadevan 	PlayMusic	O O B-music_item O B-artist I-artist 
+i want to listen to something on youtube	PlayMusic	O O O O O O O B-service 
+start playing something from iheart	PlayMusic	O O O O B-service 
+play trance life on zvooq 	PlayMusic	O B-playlist I-playlist O B-service 
+find and play a concerto on zvooq from 1978 by ginger pooley	PlayMusic	O O O O B-music_item O B-service O B-year O B-artist I-artist 
+play all things must pass 	PlayMusic	O B-track I-track I-track I-track 
+i want to hear music from allen toussaint from the fifties	PlayMusic	O O O O O O B-artist I-artist O O B-year 
+turn on last fm	PlayMusic	O O B-service I-service 
+play a song by rahsaan patterson 	PlayMusic	O O B-music_item O B-artist I-artist 
+play femme fatale by bonobo	PlayMusic	O B-track I-track O B-artist 
+play some anneliese van der pol from the thirties on groove shark	PlayMusic	O O B-artist I-artist I-artist I-artist O O B-year O B-service I-service 
+i want to listen to an ep from 1998 	PlayMusic	O O O O O O B-music_item O B-year 
+play paul mccartney	PlayMusic	O B-artist I-artist 
+play jill sobule album	PlayMusic	O B-album I-album B-music_item 
+play chant s from 1973 	PlayMusic	O B-music_item O O B-year 
+play something from 90s pop rock essentials	PlayMusic	O O O B-playlist I-playlist I-playlist I-playlist 
+play have you met miss jones by nicole from google music 	PlayMusic	O B-track I-track I-track I-track I-track O B-artist O B-service I-service 
+play chant by nigger kojak on itunes	PlayMusic	O B-music_item O B-artist I-artist O B-service 
+play some sixties songs on google music	PlayMusic	O O B-year O O B-service I-service 
+play a fifties album from dj yoda on last fm 	PlayMusic	O O B-year B-music_item O B-artist I-artist O B-service I-service 
+please play my ecstatic playlist 	PlayMusic	O O O B-playlist O 
+open deezer and play curtain call: the hits by junichi okada 	PlayMusic	O B-service O O B-album I-album I-album I-album O B-artist I-artist 
+let s play jamie robertson s handover on vimeo 	PlayMusic	O O O B-artist I-artist O B-album O B-service 
+play a sixties soundtrack	PlayMusic	O O B-year B-music_item 
+play this is: miles davis on lastfm 	PlayMusic	O B-playlist I-playlist I-playlist I-playlist O B-service 
+live in l a joseph meyer please	PlayMusic	B-album I-album I-album I-album B-artist I-artist O 
+play the top twenty hisham abbas on youtube	PlayMusic	O O B-sort I-sort B-artist I-artist O B-service 
+play some seventies filipp kirkorow	PlayMusic	O O B-year B-artist I-artist 
+play the most popular puretone	PlayMusic	O O B-sort I-sort B-artist 
+play music from e-type 	PlayMusic	O O O B-artist 
+can you play a j  pero on groove shark	PlayMusic	O O O B-artist I-artist I-artist O B-service I-service 
+play a bob burns song	PlayMusic	O O B-artist I-artist B-music_item 
+i want to hear leroi moore on vimeo   play the song chance of a lifetime 	PlayMusic	O O O O B-artist I-artist O B-service O O B-music_item B-track I-track I-track I-track 
+play some symphony music from david lindley 	PlayMusic	O O B-music_item O O B-artist I-artist 
+please play something on iheart from artist ari gold last album	PlayMusic	O O O O B-service O O B-artist I-artist B-sort B-music_item 
+i want to hear them from the artist murcof	PlayMusic	O O O O B-music_item O O O B-artist 
+play sound track music from the twenties	PlayMusic	O B-music_item I-music_item O O O B-year 
+play dance with the devil by mr  lordi	PlayMusic	O B-track I-track I-track I-track O B-artist I-artist 
+play music from 1996 	PlayMusic	O O O B-year 
+go to itunes and play dr  lecter by david hodges	PlayMusic	O O B-service O O B-album I-album O B-artist I-artist 
+play s t r e e t  d a d  from hiromitsu agatsuma through pandora 	PlayMusic	O B-album I-album I-album I-album I-album I-album I-album I-album I-album O B-artist I-artist O B-service 
+play some movement from the fourties	PlayMusic	O O B-music_item O O B-year 
+please tune into chieko ochi s good music	PlayMusic	O B-music_item O B-artist I-artist O B-sort O 
+play the greatest music from bryan maclean 	PlayMusic	O O B-sort O O B-artist I-artist 
+play something on last fm	PlayMusic	O O O B-service I-service 
+play music by joy nilo 	PlayMusic	O O O B-artist I-artist 
+play some gary lee conner	PlayMusic	O O B-artist I-artist I-artist 
+play music by brian chase 	PlayMusic	O O O B-artist I-artist 
+can you play top zvooq by fink	PlayMusic	O O O B-sort B-service O B-artist 
+play the top-20 nawang khechog soundtrack	PlayMusic	O O B-sort B-artist I-artist B-music_item 
+let s hear stuff from andrew hewitt 	PlayMusic	O O O O O B-artist I-artist 
+play a good ep from the eighties by peter murphy 	PlayMusic	O O B-sort B-music_item O O B-year O B-artist I-artist 
+play another passenger from louis nelson delisle 	PlayMusic	O B-album I-album O B-artist I-artist I-artist 
+play the top music from the railway children off last fm 	PlayMusic	O O B-sort O O B-artist I-artist I-artist O B-service I-service 
+play the best becca	PlayMusic	O O B-sort B-artist 
+play something by duke ellington from the seventies	PlayMusic	O O O B-artist I-artist O O B-year 
+use the last fm service to play a mis niños de 30	PlayMusic	O O B-service I-service O O O B-playlist I-playlist I-playlist I-playlist I-playlist 
+play my black sabbath: the dio years playlist 	PlayMusic	O O B-playlist I-playlist I-playlist I-playlist I-playlist O 
+play an ep from mike harding 	PlayMusic	O O B-music_item O B-artist I-artist 
+i want to hear anything from the rock symphonique genre please 	PlayMusic	O O O O O O O B-genre I-genre O O 
+please play a 1997 record 	PlayMusic	O O O B-year B-music_item 
+put what color is your sky by alana davis on the stereo 	PlayMusic	O B-album I-album I-album I-album I-album O B-artist I-artist O O O 
+please play a movement from george formby jr 	PlayMusic	O O O B-music_item O B-artist I-artist I-artist 
+play some new les vandyke on slacker	PlayMusic	O O B-sort B-artist I-artist O B-service 
+please open zvooq	PlayMusic	O O B-service 
+play progressive metal 	PlayMusic	O B-genre I-genre 
+i want to hear soundtrack music on youtube from helena iren michaelsen	PlayMusic	O O O O B-music_item O O B-service O B-artist I-artist I-artist 
+play a song by ramesh narayan from 1960	PlayMusic	O O B-music_item O B-artist I-artist O B-year 
+play some blues britânico 	PlayMusic	O O B-genre I-genre 
+proceed with hitomi nabatame music from 2003 	PlayMusic	O O B-artist I-artist O O B-year 
+play something on zvooq	PlayMusic	O O O B-service 
+play music from lynn & wade llp 	PlayMusic	O O O B-artist I-artist I-artist I-artist 
+let me hear chris knight music	PlayMusic	O O O B-artist I-artist O 
+let s hear good mohammad mamle on vimeo 	PlayMusic	O O O B-sort B-artist I-artist O B-service 
+please play a sound track from the fifties that s on iheart	PlayMusic	O O O B-music_item I-music_item O O B-year O O O B-service 
+play music from van-pires by dmitry malikov 	PlayMusic	O B-album I-album I-album O B-artist I-artist 
+play rich sex on iheart	PlayMusic	O B-track I-track O B-service 
+play modern psychedelia 	PlayMusic	O B-playlist I-playlist 
+rate this album four out of 6 stars	RateBook	O B-object_select B-object_type B-rating_value O O B-best_rating B-rating_unit 
+give this textbook four stars 	RateBook	O B-object_select B-object_type B-rating_value B-rating_unit 
+rate a twist in the tale zero out of 6 points	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name B-rating_value O O B-best_rating B-rating_unit 
+rate the children of niobe 1 out of 6 points 	RateBook	O B-object_name I-object_name I-object_name I-object_name B-rating_value O O B-best_rating B-rating_unit 
+give zero stars to halo: ghosts of onyx	RateBook	O B-rating_value B-rating_unit O B-object_name I-object_name I-object_name I-object_name 
+give this novel a score of 5	RateBook	O B-object_select B-object_type O O O B-rating_value 
+give the current series four of 6 points 	RateBook	O O B-object_select B-object_part_of_series_type B-rating_value O B-best_rating B-rating_unit 
+give 4 out of 6 points to the spirit ring chronicle	RateBook	O B-rating_value O O B-best_rating B-rating_unit O B-object_name I-object_name I-object_name B-object_part_of_series_type 
+give two stars out of 6 to 36 children	RateBook	O B-rating_value B-rating_unit O O B-best_rating O B-object_name I-object_name 
+rate the sneetches and other stories a three	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name O B-rating_value 
+rate the current series four stars 	RateBook	O O B-object_select B-object_part_of_series_type B-rating_value B-rating_unit 
+rate this book a 4 out of 6	RateBook	O B-object_select B-object_type O B-rating_value O O B-best_rating 
+rate the current novel 5 of 6 stars	RateBook	O O B-object_select B-object_type B-rating_value O B-best_rating B-rating_unit 
+rate this book a 1 	RateBook	O B-object_select B-object_type O B-rating_value 
+give zero out of 6 to the current album	RateBook	O B-rating_value O O B-best_rating O O B-object_select B-object_type 
+give this album 5 points 	RateBook	O B-object_select B-object_type B-rating_value B-rating_unit 
+rate the mystery of the tolling bell series 4 stars 	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name B-object_part_of_series_type B-rating_value B-rating_unit 
+give the current novel two stars 	RateBook	O O B-object_select B-object_type B-rating_value B-rating_unit 
+give the current book 4 stars	RateBook	O O B-object_select B-object_type B-rating_value B-rating_unit 
+give joe magarac and his usa citizen papers 5 points	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name I-object_name B-rating_value B-rating_unit 
+rate the guilty 0 of 6 points	RateBook	O B-object_name I-object_name B-rating_value O B-best_rating B-rating_unit 
+rate this textbook four out of 6	RateBook	O B-object_select B-object_type B-rating_value O O B-best_rating 
+give the catedral series four stars 	RateBook	O O B-object_name B-object_part_of_series_type B-rating_value B-rating_unit 
+reminiscences of the anti-japanese guerillas chronicle deserves zero points out of 6 for a rating 	RateBook	B-object_name I-object_name I-object_name I-object_name I-object_name B-object_part_of_series_type O B-rating_value B-rating_unit O O B-best_rating O O O 
+give small screen  big picture a 0 out of 6 rating 	RateBook	O B-object_name I-object_name I-object_name I-object_name O B-rating_value O O B-best_rating O 
+gods and pawns should get a three	RateBook	B-object_name I-object_name I-object_name O O O B-rating_value 
+give zero stars to this textbook	RateBook	O B-rating_value B-rating_unit O B-object_select B-object_type 
+rate the current novel a 4 out of 6 stars 	RateBook	O O B-object_select B-object_type O B-rating_value O O B-best_rating B-rating_unit 
+rate the book the atmospheric railway 5 out of 6	RateBook	O O B-object_type B-object_name I-object_name I-object_name B-rating_value O O B-best_rating 
+rate black boy 4 out of 6	RateBook	O B-object_name I-object_name B-rating_value O O B-best_rating 
+rate the chronicle current 1 star	RateBook	O O B-object_part_of_series_type B-object_select B-rating_value O 
+mark this album a score of 5	RateBook	O B-object_select B-object_type O O O B-rating_value 
+rate the current novel zero out of 6	RateBook	O O B-object_select B-object_type B-rating_value O O B-best_rating 
+rate the current novel a 2	RateBook	O O B-object_select B-object_type O B-rating_value 
+give the giant devil dingo 4 points 	RateBook	O B-object_name I-object_name I-object_name I-object_name B-rating_value B-rating_unit 
+rate this current novel two out of 6 	RateBook	O B-object_select I-object_select B-object_type B-rating_value O O B-best_rating 
+give monthly index of medical specialities a two out of 6 rating 	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name O B-rating_value O O B-best_rating O 
+rate this novel 2 out of 6 points	RateBook	O B-object_select B-object_type B-rating_value O O B-best_rating B-rating_unit 
+rate the current novel 3 stars	RateBook	O O B-object_select B-object_type B-rating_value B-rating_unit 
+rate the current essay zero out of 6 stars	RateBook	O O B-object_select B-object_type B-rating_value O O B-best_rating B-rating_unit 
+rate this current album 0 stars	RateBook	O B-object_select I-object_select B-object_type B-rating_value B-rating_unit 
+give a brief stop on the road from auschwitz 1 out of 6 stars	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name I-object_name I-object_name B-rating_value O O B-best_rating B-rating_unit 
+rate this album 4 out of 6 stars	RateBook	O B-object_select B-object_type B-rating_value O O B-best_rating B-rating_unit 
+rate hate that cat 1 out of 6 stars 	RateBook	O B-object_name I-object_name I-object_name B-rating_value O O B-best_rating B-rating_unit 
+give my current book one of 6 stars	RateBook	O O B-object_select B-object_type B-rating_value O B-best_rating B-rating_unit 
+rate current novel one stars 	RateBook	O B-object_select B-object_type B-rating_value B-rating_unit 
+give five out of 6 points to this album	RateBook	O B-rating_value O O B-best_rating B-rating_unit O B-object_select B-object_type 
+give a rating of 2 to juneteenth 	RateBook	O O O O B-rating_value O B-object_name 
+rate ruth five out of 6 points 	RateBook	O B-object_name B-rating_value O O B-best_rating B-rating_unit 
+rate the sea of trolls 1 stars out of 6	RateBook	O B-object_name I-object_name I-object_name I-object_name B-rating_value B-rating_unit O O B-best_rating 
+give the zenith angle one out of 6 points	RateBook	O B-object_name I-object_name I-object_name B-rating_value O O B-best_rating B-rating_unit 
+give zero stars to rhialto the marvellous	RateBook	O B-rating_value B-rating_unit O B-object_name I-object_name I-object_name 
+give the current book a zero of 6	RateBook	O O B-object_select B-object_type O B-rating_value O B-best_rating 
+rate personal demons 0 out of 6 points	RateBook	O B-object_name I-object_name B-rating_value O O B-best_rating B-rating_unit 
+rate the current series a 4	RateBook	O O B-object_select B-object_part_of_series_type O B-rating_value 
+give one of 6 points to who will cry when you die	RateBook	O B-rating_value O B-best_rating B-rating_unit O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name 
+give zero out of 6 stars to this album	RateBook	O B-rating_value O O B-best_rating B-rating_unit O B-object_select B-object_type 
+give this novel 2 stars	RateBook	O B-object_select B-object_type B-rating_value B-rating_unit 
+rate the 8-week cholesterol cure three out of 6 	RateBook	O B-object_name I-object_name I-object_name I-object_name B-rating_value O O B-best_rating 
+rate this novel 3 out of 6 points	RateBook	O B-object_select B-object_type B-rating_value O O B-best_rating B-rating_unit 
+rate the lives of john lennon five points	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name B-rating_value B-rating_unit 
+give the american scene 2 of 6 stars	RateBook	O B-object_name I-object_name I-object_name B-rating_value O B-best_rating B-rating_unit 
+rate this textbook a one 	RateBook	O B-object_select B-object_type O B-rating_value 
+give summer of the swans 1 points 	RateBook	O B-object_name I-object_name I-object_name I-object_name B-rating_value B-rating_unit 
+give the current textbook a rating of five 	RateBook	O O B-object_select B-object_type O O O B-rating_value 
+give 4 points to the person and the common good	RateBook	O B-rating_value B-rating_unit O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name 
+give a four rating to a world apart 	RateBook	O O B-rating_value O O B-object_name I-object_name I-object_name 
+rate this chronicle 0 points	RateBook	O B-object_select B-object_part_of_series_type B-rating_value B-rating_unit 
+give wilco: learning how to die a rating of four points 	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name O O O B-rating_value B-rating_unit 
+rate this saga two out of 6 	RateBook	O B-object_select B-object_part_of_series_type B-rating_value O O B-best_rating 
+rate the gift: imagination and the erotic life of property five stars	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name I-object_name I-object_name I-object_name B-rating_value B-rating_unit 
+rate neverwhere four out of 6	RateBook	O B-object_name B-rating_value O O B-best_rating 
+rate in the company of cheerful ladies a zero out of 6	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name O B-rating_value O O B-best_rating 
+give one start to the current book	RateBook	O B-rating_value O O O B-object_select B-object_type 
+give this chronicle a 2 rating 	RateBook	O B-object_select B-object_part_of_series_type O B-rating_value O 
+rate this essay a 1	RateBook	O B-object_select B-object_type O B-rating_value 
+out of 6  give rivers of babylon a 1	RateBook	O O B-best_rating O B-object_name I-object_name I-object_name O B-rating_value 
+give 5 of 6 stars to expressive processing	RateBook	O B-rating_value O B-best_rating B-rating_unit O B-object_name I-object_name 
+rate the ghost house series a one	RateBook	O B-object_name I-object_name I-object_name B-object_part_of_series_type O B-rating_value 
+rate know ye not agincourt 2 out of 6 stars	RateBook	O B-object_name I-object_name I-object_name I-object_name B-rating_value O O B-best_rating B-rating_unit 
+i would rate theft: a love story four out of 6 stars 	RateBook	O O O B-object_name I-object_name I-object_name I-object_name B-rating_value O O B-best_rating B-rating_unit 
+rate the further adventures of the joker four stars	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name B-rating_value B-rating_unit 
+give 0 rating to in the heart of the country	RateBook	O B-rating_value O O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name 
+give 1 out of 6 rating to the current textbook	RateBook	O B-rating_value O O B-best_rating O O O B-object_select B-object_type 
+give the current chronicle five of 6 points	RateBook	O O B-object_select B-object_part_of_series_type B-rating_value O B-best_rating B-rating_unit 
+rate cotton comes to harlem a 2	RateBook	O B-object_name I-object_name I-object_name I-object_name O B-rating_value 
+give this album one stars	RateBook	O B-object_select B-object_type B-rating_value B-rating_unit 
+rate the adventures of augie march one points	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name B-rating_value B-rating_unit 
+rate soul music a 0 	RateBook	O B-object_name I-object_name O B-rating_value 
+give hindu temples: what happened to them a 5 out of 6 stars 	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name O B-rating_value O O B-best_rating B-rating_unit 
+give this novel a 1 	RateBook	O B-object_select B-object_type O B-rating_value 
+rate the current textbook 1 out of 6	RateBook	O O B-object_select B-object_type B-rating_value O O B-best_rating 
+give this textbook 0 out of 6 stars	RateBook	O B-object_select B-object_type B-rating_value O O B-best_rating B-rating_unit 
+give the crystal snare 5 stars	RateBook	O B-object_name I-object_name I-object_name B-rating_value B-rating_unit 
+rate this saga two out of 6 	RateBook	O B-object_select B-object_part_of_series_type B-rating_value O O B-best_rating 
+give wilco: learning how to die a rating of four points 	RateBook	O B-object_name I-object_name I-object_name I-object_name I-object_name O O O B-rating_value B-rating_unit 
+rate this book 3 stars out of 6	RateBook	O B-object_select B-object_type B-rating_value B-rating_unit O O B-best_rating 
+rate the three junes one out of 6	RateBook	O O B-object_name I-object_name B-rating_value O O B-best_rating 
+give four stars to the broken window	RateBook	O B-rating_value B-rating_unit O B-object_name I-object_name I-object_name 
+rate the current series 4 points	RateBook	O O B-object_select B-object_part_of_series_type B-rating_value B-rating_unit 
+wish to find the movie the heart beat	SearchCreativeWork	O O O O B-object_type O B-object_name I-object_name 
+please look up the tv show  vanity 	SearchCreativeWork	O O O O B-object_type I-object_type B-object_name 
+get me the elvis  christmas album tv show 	SearchCreativeWork	O O O B-object_name I-object_name I-object_name B-object_type I-object_type 
+please find me the saga  the deep six 	SearchCreativeWork	O O O O B-object_type B-object_name I-object_name I-object_name 
+wish to see the photograph with the name live: right here	SearchCreativeWork	O O O O B-object_type O O O B-object_name I-object_name I-object_name 
+looking for a novel called death march	SearchCreativeWork	O O O B-object_type O B-object_name I-object_name 
+can you find me the work  the curse of oak island	SearchCreativeWork	O O O O O O B-object_name I-object_name I-object_name I-object_name I-object_name 
+please get me the sacred and profane love machine game 	SearchCreativeWork	O O O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name B-object_type 
+need a creative work called hit by love	SearchCreativeWork	O O O O O B-object_name I-object_name I-object_name 
+search for the trailer for the office	SearchCreativeWork	O O O B-object_type O B-object_name I-object_name 
+looking for a creative work called plant ecology	SearchCreativeWork	O O O O O O B-object_name I-object_name 
+find the television show to me	SearchCreativeWork	O O B-object_type I-object_type B-object_name I-object_name 
+can you please find me the saga chump change	SearchCreativeWork	O O O O O O B-object_type B-object_name I-object_name 
+can you find me the ridiculous 6 book	SearchCreativeWork	O O O O B-object_name I-object_name I-object_name B-object_type 
+please fine me the tv series  now we are married 	SearchCreativeWork	O O O O B-object_type I-object_type B-object_name I-object_name I-object_name I-object_name 
+please look up the work  bachelor pad 	SearchCreativeWork	O O O O O B-object_name I-object_name 
+please help me find the late night heartbroken blues television show 	SearchCreativeWork	O O O O O B-object_name I-object_name I-object_name I-object_name B-object_type I-object_type 
+please help me find  bend it like beckham the musical 	SearchCreativeWork	O O O O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name 
+please look up the tv series parables for wooden ears 	SearchCreativeWork	O O O O B-object_type I-object_type B-object_name I-object_name I-object_name I-object_name 
+can you find me  hey man	SearchCreativeWork	O O O O B-object_name I-object_name 
+please search for switched 	SearchCreativeWork	O O O B-object_name 
+can you get me the controlled conversations tv series	SearchCreativeWork	O O O O O B-object_name I-object_name B-object_type I-object_type 
+please look up the song the mad magician 	SearchCreativeWork	O O O O B-object_type B-object_name I-object_name I-object_name 
+please search for the tv show  the best of white lion 	SearchCreativeWork	O O O O B-object_type I-object_type B-object_name I-object_name I-object_name I-object_name I-object_name 
+please find me phineas redux 	SearchCreativeWork	O O O B-object_name I-object_name 
+get me the procession of ants tv show 	SearchCreativeWork	O O O B-object_name I-object_name I-object_name B-object_type I-object_type 
+looking for a game called phinally phamous	SearchCreativeWork	O O O B-object_type O B-object_name I-object_name 
+can you search the daring youth saga	SearchCreativeWork	O O O O B-object_name I-object_name B-object_type 
+look for the book the girl who was plugged in 	SearchCreativeWork	O O O B-object_type B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name 
+find me a tv show called baby blue	SearchCreativeWork	O O O B-object_type I-object_type O B-object_name I-object_name 
+search for appalachian journey	SearchCreativeWork	O O B-object_name I-object_name 
+look for the television show meet the prince	SearchCreativeWork	O O O B-object_type I-object_type B-object_name I-object_name I-object_name 
+can you find me cracks the safe	SearchCreativeWork	O O O O B-object_name I-object_name I-object_name 
+please help me search the hell money saga 	SearchCreativeWork	O O O O O B-object_name I-object_name B-object_type 
+get me the secret south song 	SearchCreativeWork	O O O B-object_name I-object_name B-object_type 
+can you find me the work titled music for millions	SearchCreativeWork	O O O O O O O B-object_name I-object_name I-object_name 
+please search for the painting titled this is the night 	SearchCreativeWork	O O O O B-object_type O B-object_name I-object_name I-object_name I-object_name 
+could you locate the epic conditions picture	SearchCreativeWork	O O O O B-object_name I-object_name B-object_type 
+get me the trailer of good morning sunshine	SearchCreativeWork	O O O B-object_type O B-object_name I-object_name I-object_name 
+please search the an introduction to karl marx painting 	SearchCreativeWork	O O O B-object_name I-object_name I-object_name I-object_name I-object_name B-object_type 
+can you find me the blue spring trailer	SearchCreativeWork	O O O O O B-object_name I-object_name B-object_type 
+could you find the tv series the approach	SearchCreativeWork	O O O O B-object_type I-object_type B-object_name I-object_name 
+search for the tv show  a lawless street 	SearchCreativeWork	O O O B-object_type I-object_type B-object_name I-object_name I-object_name 
+please look up three essays on the theory of sexuality show 	SearchCreativeWork	O O O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name I-object_name B-object_type 
+please get me the compulsive disclosure song 	SearchCreativeWork	O O O O B-object_name I-object_name B-object_type 
+can you look up the molecular oncology saga	SearchCreativeWork	O O O O O B-object_name I-object_name B-object_type 
+search for the sound of one hand clapping	SearchCreativeWork	O O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name 
+find the creative work deadly weapons	SearchCreativeWork	O O O O B-object_name I-object_name 
+need the creative work called the logic of scientific discovery	SearchCreativeWork	O O O O O B-object_name I-object_name I-object_name I-object_name I-object_name 
+can you find me the national anthem of the ancient britons television show	SearchCreativeWork	O O O O O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name B-object_type I-object_type 
+can you please find me the harry hood saga	SearchCreativeWork	O O O O O O B-object_name I-object_name B-object_type 
+can you find me the work  bible translations into hawaii pidgin	SearchCreativeWork	O O O O O O B-object_name I-object_name I-object_name I-object_name I-object_name 
+please look up and find me monty python live at the hollywood bowl 	SearchCreativeWork	O O O O O O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name I-object_name 
+please search for mary 	SearchCreativeWork	O O O B-object_name 
+please search the game atla: all this life allows 	SearchCreativeWork	O O O B-object_type B-object_name I-object_name I-object_name I-object_name I-object_name 
+find me the novel with the name to lose my life …	SearchCreativeWork	O O O B-object_type O O O B-object_name I-object_name I-object_name I-object_name O 
+looking for a song with the title of live at the kings center	SearchCreativeWork	O O O B-object_type O O O O B-object_name I-object_name I-object_name I-object_name I-object_name 
+can you find the american bison photograph	SearchCreativeWork	O O O O B-object_name I-object_name B-object_type 
+can you find me the free for all show	SearchCreativeWork	O O O O O B-object_name I-object_name I-object_name B-object_type 
+please find me the olympia 74 soundtrack 	SearchCreativeWork	O O O O B-object_name I-object_name B-object_type 
+look for the album slave to the grind	SearchCreativeWork	O O O B-object_type B-object_name I-object_name I-object_name I-object_name 
+please find me the projekt: the new face of goth 	SearchCreativeWork	O O O O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name 
+can you get me the message from god saga	SearchCreativeWork	O O O O O B-object_name I-object_name I-object_name B-object_type 
+find me the soundtrack a honeymoon adventure	SearchCreativeWork	O O O B-object_type B-object_name I-object_name I-object_name 
+please get me the henderson kids saga 	SearchCreativeWork	O O O B-object_name I-object_name I-object_name B-object_type 
+find the movie splendor in the grass	SearchCreativeWork	O O B-object_type B-object_name I-object_name I-object_name I-object_name 
+am looking for a book with the title free to play	SearchCreativeWork	O O O O B-object_type O O O B-object_name I-object_name I-object_name 
+look for the tv series jersey boys	SearchCreativeWork	O O O B-object_type I-object_type B-object_name I-object_name 
+can you search the book  paris - when it sizzles	SearchCreativeWork	O O O O B-object_type B-object_name I-object_name I-object_name I-object_name I-object_name 
+looking for a painting with the title with you	SearchCreativeWork	O O O B-object_type O O O B-object_name I-object_name 
+please find me the classified book 	SearchCreativeWork	O O O O B-object_name B-object_type 
+look for the show v-the new mythology suite	SearchCreativeWork	O O O B-object_type B-object_name I-object_name I-object_name I-object_name 
+find the creative work face down	SearchCreativeWork	O O O O B-object_name I-object_name 
+find four songs	SearchCreativeWork	O B-object_name I-object_name 
+find me the soundtrack live at the greek theatre	SearchCreativeWork	O O O B-object_type B-object_name I-object_name I-object_name I-object_name I-object_name 
+please search for the television show  episodi di the blacklist 	SearchCreativeWork	O O O O B-object_type I-object_type B-object_name I-object_name I-object_name I-object_name 
+find a creative work called fire in the hole	SearchCreativeWork	O O O O O B-object_name I-object_name I-object_name I-object_name 
+looking for the picture with the name of who made stevie crye	SearchCreativeWork	O O O B-object_type O O O O B-object_name I-object_name I-object_name I-object_name 
+look for the album wolves within	SearchCreativeWork	O O O B-object_type B-object_name I-object_name 
+find the album orphan girl at the cemetery	SearchCreativeWork	O O B-object_type B-object_name I-object_name I-object_name I-object_name I-object_name 
+please find me the journal of the british astronomical association movie 	SearchCreativeWork	O O O O B-object_name I-object_name I-object_name I-object_name I-object_name I-object_name B-object_type 
+find the tv show the daydreamer	SearchCreativeWork	O O B-object_type I-object_type B-object_name I-object_name 
+can you please get me the book dracula 5: the blood legacy	SearchCreativeWork	O O O O O O B-object_type B-object_name I-object_name I-object_name I-object_name I-object_name 
+please look up the novel  live to dance 	SearchCreativeWork	O O O O B-object_type B-object_name I-object_name I-object_name 
+please find me the video game titled 20 hours in america 	SearchCreativeWork	O O O O B-object_type I-object_type O B-object_name I-object_name I-object_name I-object_name 
+find the creative work the devil in stitches	SearchCreativeWork	O O O O B-object_name I-object_name I-object_name I-object_name 
+please look up the work  prophets 	SearchCreativeWork	O O O O O B-object_name 
+i m looking for welcome to the canteen	SearchCreativeWork	O O O O B-object_name I-object_name I-object_name I-object_name 
+please search for the journal of official statistics show 	SearchCreativeWork	O O O O B-object_name I-object_name I-object_name I-object_name B-object_type 
+please look up show-biz blues photograph 	SearchCreativeWork	O O O B-object_name I-object_name B-object_type 
+please search the woodsmen of the west 	SearchCreativeWork	O O O B-object_name I-object_name I-object_name I-object_name 
+can you find the creative works associated with caryl & marilyn: real friends	SearchCreativeWork	O O O O O O O O B-object_name I-object_name I-object_name I-object_name I-object_name 
+please get me the dead soul saga 	SearchCreativeWork	O O O O B-object_name I-object_name B-object_type 
+please search the live from leeds album 	SearchCreativeWork	O O O B-object_name I-object_name I-object_name B-object_type 
+please look up the johnny english - la rinascita painting 	SearchCreativeWork	O O O O B-object_name I-object_name I-object_name I-object_name I-object_name B-object_type 
+can you find me the sword with no name trailer	SearchCreativeWork	O O O O B-object_name I-object_name I-object_name I-object_name I-object_name B-object_type 
+i wish to watch the fold trailer  please search 	SearchCreativeWork	O O O O B-object_name I-object_name B-object_type O O 
+can you find me the almost human painting	SearchCreativeWork	O O O O O B-object_name I-object_name B-object_type 
+please find me the work  serious awesomeness 	SearchCreativeWork	O O O O O B-object_name I-object_name 
+search for the game difficult loves	SearchCreativeWork	O O O B-object_type B-object_name I-object_name 
+is babar: king of the elephants playing 	SearchScreeningEvent	O B-movie_name I-movie_name I-movie_name I-movie_name I-movie_name O 
+is the ghost playing	SearchScreeningEvent	O B-movie_name I-movie_name O 
+is bartok the magnificent playing at seven am	SearchScreeningEvent	O B-movie_name I-movie_name I-movie_name O O B-timeRange I-timeRange 
+what s the movie schedule	SearchScreeningEvent	O O O B-object_type I-object_type 
+i want to see jla adventures: trapped in time	SearchScreeningEvent	O O O O B-movie_name I-movie_name I-movie_name I-movie_name I-movie_name 
+when is the fox and the child playing in this cinema	SearchScreeningEvent	O O B-movie_name I-movie_name I-movie_name I-movie_name I-movie_name O O O B-object_location_type 
+show me the schedule for rat rod rockers	SearchScreeningEvent	O O O B-object_type O B-movie_name I-movie_name I-movie_name 
+is any which way you can playing in 15 seconds	SearchScreeningEvent	O B-movie_name I-movie_name I-movie_name I-movie_name I-movie_name O B-timeRange I-timeRange I-timeRange 
+i want to see the portrait of a lady at the nearest cinema 	SearchScreeningEvent	O O O O B-movie_name I-movie_name I-movie_name I-movie_name I-movie_name O O B-spatial_relation B-object_location_type 
+where can i see the prime ministers: the pioneers	SearchScreeningEvent	O O O O B-movie_name I-movie_name I-movie_name I-movie_name I-movie_name 
+i need to find the movie theatre showing the crooked web closest to me	SearchScreeningEvent	O O O O O B-object_location_type I-object_location_type O B-movie_name I-movie_name I-movie_name B-spatial_relation O O 
+i want to see while the sun shines at the closest movie house 	SearchScreeningEvent	O O O O B-movie_name I-movie_name I-movie_name I-movie_name O O B-spatial_relation B-object_location_type I-object_location_type 
+i want to see those kids from town  when will it be showing	SearchScreeningEvent	O O O O B-movie_name I-movie_name I-movie_name I-movie_name O O O O O 
+find the schedule for the comedian at santikos theatres 	SearchScreeningEvent	O O B-object_type O B-movie_name I-movie_name O B-location_name I-location_name 
+what are the movie schedules for my favorite theaters 	SearchScreeningEvent	O O O B-object_type I-object_type O O O B-location_name 
+what are the movies showing in the neighbourhood 	SearchScreeningEvent	O O O B-movie_type O B-spatial_relation I-spatial_relation I-spatial_relation 
+is without witness playing twenty two hours from now	SearchScreeningEvent	O B-movie_name I-movie_name O B-timeRange I-timeRange I-timeRange I-timeRange I-timeRange 
+i need animated movies in the area for dinner time	SearchScreeningEvent	O O B-movie_type I-movie_type B-spatial_relation I-spatial_relation I-spatial_relation O B-timeRange O 
+i want to see i dream of jeanie in a movie theatre	SearchScreeningEvent	O O O O B-movie_name I-movie_name I-movie_name I-movie_name O O B-object_location_type I-object_location_type 
+can i see ellis island revisited in 1 minute	SearchScreeningEvent	O O O B-movie_name I-movie_name I-movie_name B-timeRange I-timeRange I-timeRange 
+i want animated movies at mjr theatres	SearchScreeningEvent	O O B-movie_type I-movie_type O B-location_name I-location_name 
+show me the schedule for the oblong box	SearchScreeningEvent	O O O B-object_type O B-movie_name I-movie_name I-movie_name 
+i want to know if there are any movies playing in the area 	SearchScreeningEvent	O O O O O O O O B-movie_type O B-spatial_relation I-spatial_relation I-spatial_relation 
+is what a wonderful place showing at cinemark theatres	SearchScreeningEvent	O B-movie_name I-movie_name I-movie_name I-movie_name O O B-location_name I-location_name 
+show the closest movie theatre that shows boycott	SearchScreeningEvent	O O B-spatial_relation B-object_location_type I-object_location_type O O B-movie_name 
+i want to see doa: dead or alive at loews cineplex entertainment 	SearchScreeningEvent	O O O O B-movie_name I-movie_name I-movie_name I-movie_name O B-location_name I-location_name I-location_name 
+is the nightmare showing six hours from now at the nearest cinema 	SearchScreeningEvent	O B-movie_name I-movie_name O B-timeRange I-timeRange I-timeRange I-timeRange O O B-spatial_relation B-object_location_type 
+what is the nearest movie house with window connection playing at lunch	SearchScreeningEvent	O O O B-spatial_relation B-object_location_type I-object_location_type O B-movie_name I-movie_name O O B-timeRange 
+is patrick still lives showing at amc theaters	SearchScreeningEvent	O B-movie_name I-movie_name I-movie_name O O B-location_name I-location_name 
+fine the movie schedules for the wanda group 	SearchScreeningEvent	O O B-object_type I-object_type O O B-location_name I-location_name 
+give me the movie schedule nearby	SearchScreeningEvent	O O O B-object_type I-object_type B-spatial_relation 
+find the schedule at the douglas theatre company 	SearchScreeningEvent	O O B-object_type O O B-location_name I-location_name I-location_name 
+show me the movies at harkins theatres 	SearchScreeningEvent	O O O B-movie_type O B-location_name I-location_name 
+what movies at star theatres 	SearchScreeningEvent	O B-movie_type O B-location_name I-location_name 
+i want a movie schedule 	SearchScreeningEvent	O O O B-object_type I-object_type 
+can i get the movie times	SearchScreeningEvent	O O O O B-object_type I-object_type 
+i want to see medal for the general	SearchScreeningEvent	O O O O B-movie_name I-movie_name I-movie_name I-movie_name 
+can i get the times for movies in the neighbourhood	SearchScreeningEvent	O O O O B-object_type O B-movie_type B-spatial_relation I-spatial_relation I-spatial_relation 
+may i have the movie schedules for speakeasy theaters	SearchScreeningEvent	O O O O B-object_type I-object_type O B-location_name I-location_name 
+find animated movies close by	SearchScreeningEvent	O B-movie_type I-movie_type B-spatial_relation I-spatial_relation 
+is american primitive showing in santikos theatres	SearchScreeningEvent	O B-movie_name I-movie_name O O B-location_name I-location_name 
+what are the movie schedules in the neighborhood	SearchScreeningEvent	O O O B-object_type I-object_type B-spatial_relation I-spatial_relation I-spatial_relation 
+check the schedule for bow tie cinemas 	SearchScreeningEvent	O O B-object_type O B-location_name I-location_name I-location_name 
+check the timings for snowbound at the closest movie theatre 	SearchScreeningEvent	O O O O B-movie_name O O B-spatial_relation B-object_location_type I-object_location_type 
+what are the movie times at caribbean cinemas	SearchScreeningEvent	O O O B-object_type I-object_type O B-location_name I-location_name 
+i need films in the neighborhood	SearchScreeningEvent	O O B-movie_type B-spatial_relation I-spatial_relation I-spatial_relation 
+show the movie schedules in the neighborhood	SearchScreeningEvent	O O B-object_type I-object_type B-spatial_relation I-spatial_relation I-spatial_relation 
+where s the nearest movie house showing foreign films	SearchScreeningEvent	O O O B-spatial_relation B-object_location_type I-object_location_type O O B-movie_type 
+what movies are showing now at the closest cinema	SearchScreeningEvent	O B-movie_type O O B-timeRange O O B-spatial_relation B-object_location_type 
+is rumor has it playing	SearchScreeningEvent	O B-movie_name I-movie_name I-movie_name O 
+i need a list of speakeasy theaters movie times	SearchScreeningEvent	O O O O O B-location_name I-location_name B-object_type I-object_type 
+when is the outer space connection playing at the nearest cinema 	SearchScreeningEvent	O O B-movie_name I-movie_name I-movie_name I-movie_name O O O B-spatial_relation B-object_location_type 
+find the movie times at harkins theatres 	SearchScreeningEvent	O O B-object_type I-object_type O B-location_name I-location_name 
+find the films at century theatres 	SearchScreeningEvent	O O B-movie_type O B-location_name I-location_name 
+show the animated movies playing in the neighbourhood	SearchScreeningEvent	O O B-movie_type I-movie_type O B-spatial_relation I-spatial_relation I-spatial_relation 
+i want to see fear chamber 	SearchScreeningEvent	O O O O B-movie_name I-movie_name 
+show me southern theatres movie times	SearchScreeningEvent	O O B-location_name I-location_name B-object_type I-object_type 
+is the unnaturals showing at 13 	SearchScreeningEvent	O B-movie_name I-movie_name O O B-timeRange 
+is no time to be young showing at amc theaters	SearchScreeningEvent	O B-movie_name I-movie_name I-movie_name I-movie_name I-movie_name O O B-location_name I-location_name 
+find the movie schedules for regal entertainment group 	SearchScreeningEvent	O O B-object_type I-object_type O B-location_name I-location_name I-location_name 
+i want to see shattered image 	SearchScreeningEvent	O O O O B-movie_name I-movie_name 
+find the schedule at star theatres 	SearchScreeningEvent	O O B-object_type O B-location_name I-location_name 
+will i think i do be playing at 7 pm	SearchScreeningEvent	O B-movie_name I-movie_name I-movie_name I-movie_name O O O B-timeRange I-timeRange 
+show me the schedule for arclight hollywood for only animated movies	SearchScreeningEvent	O O O B-object_type O B-location_name I-location_name O O B-movie_type I-movie_type 
+find the schedule for great mail robbery 	SearchScreeningEvent	O O B-object_type O B-movie_name I-movie_name I-movie_name 
+give me the movies in the neighborhood 	SearchScreeningEvent	O O O B-movie_type B-spatial_relation I-spatial_relation I-spatial_relation 
+what movies are playing close by	SearchScreeningEvent	O B-movie_type O O B-spatial_relation I-spatial_relation 
+is the two gladiators playing	SearchScreeningEvent	O B-movie_name I-movie_name I-movie_name O 
+what s the movie schedule for great escape theatres	SearchScreeningEvent	O O O B-object_type I-object_type O B-location_name I-location_name I-location_name 
+find the movie schedule close by	SearchScreeningEvent	O O B-object_type I-object_type B-spatial_relation I-spatial_relation 
+i want to see outcast 	SearchScreeningEvent	O O O O B-movie_name 
+show me the schedule of movie the great gildersleeve near movie house	SearchScreeningEvent	O O O B-object_type O O B-movie_name I-movie_name I-movie_name O B-object_location_type I-object_location_type 
+i need times for a yiddish world remembered at dipson theatres	SearchScreeningEvent	O O B-object_type O B-movie_name I-movie_name I-movie_name I-movie_name O B-location_name I-location_name 
+find the movie schedules at goodrich quality theaters 	SearchScreeningEvent	O O B-object_type I-object_type O B-location_name I-location_name I-location_name 
+show me the movie schedule in the neighbourhood 	SearchScreeningEvent	O O O B-object_type I-object_type B-spatial_relation I-spatial_relation I-spatial_relation 
+show me the movie times for films  nearby	SearchScreeningEvent	O O O B-object_type I-object_type O B-movie_type B-spatial_relation 
+show the movie times for animated movies in the neighbourhood	SearchScreeningEvent	O O B-object_type I-object_type O B-movie_type I-movie_type B-spatial_relation I-spatial_relation I-spatial_relation 
+is the eye – infinity playing at general cinema corporation	SearchScreeningEvent	O B-movie_name I-movie_name I-movie_name I-movie_name O O B-location_name I-location_name I-location_name 
+can you check the timings for super sweet 16: the movie	SearchScreeningEvent	O O O O O O B-movie_name I-movie_name I-movie_name I-movie_name I-movie_name 
+is we are northern lights playing in any movie theatre	SearchScreeningEvent	O B-movie_name I-movie_name I-movie_name I-movie_name O O O B-object_location_type I-object_location_type 
+what times will the young swordsman be showing at my cinema	SearchScreeningEvent	O B-object_type O B-movie_name I-movie_name I-movie_name O O O O B-object_location_type 
+show the sexy dance 2 times at the  closest movie house	SearchScreeningEvent	O O B-movie_name I-movie_name I-movie_name B-object_type O O B-spatial_relation B-object_location_type I-object_location_type 
+what are some close by animated movies showing	SearchScreeningEvent	O O O B-spatial_relation I-spatial_relation B-movie_type I-movie_type O 
+movie schedules close by for animated movies	SearchScreeningEvent	B-object_type I-object_type B-spatial_relation I-spatial_relation O B-movie_type I-movie_type 
+what films are playing close by	SearchScreeningEvent	O B-movie_type O O B-spatial_relation I-spatial_relation 
+find the movie schedule in the area 	SearchScreeningEvent	O O B-object_type I-object_type B-spatial_relation I-spatial_relation I-spatial_relation 
+is cowboy canteen playing	SearchScreeningEvent	O B-movie_name I-movie_name O 
+is rare birds showing at the nearest movie theatre at noon 	SearchScreeningEvent	O B-movie_name I-movie_name O O O B-spatial_relation B-object_location_type I-object_location_type O B-timeRange 
+what are the movie times	SearchScreeningEvent	O O O B-object_type I-object_type 
+where can i find the movie schedules	SearchScreeningEvent	O O O O O B-object_type I-object_type 
+find the movie schedule for north american cinemas in eleven seconds 	SearchScreeningEvent	O O B-object_type I-object_type O B-location_name I-location_name I-location_name B-timeRange I-timeRange I-timeRange 
+find the nearest cinema with movies playing	SearchScreeningEvent	O O B-spatial_relation B-object_location_type O B-movie_type O 
+what are the movie times	SearchScreeningEvent	O O O B-object_type I-object_type 
+what are the times for the gingerbread man	SearchScreeningEvent	O O O B-object_type O B-movie_name I-movie_name I-movie_name 
+what films are playing close by	SearchScreeningEvent	O B-movie_type O O B-spatial_relation I-spatial_relation 
+is any cinema playing the spirit of youth	SearchScreeningEvent	O O B-object_location_type O B-movie_name I-movie_name I-movie_name I-movie_name 
+what are the movie times for animated movies in the neighbourhood	SearchScreeningEvent	O O O B-object_type I-object_type O B-movie_type I-movie_type B-spatial_relation I-spatial_relation I-spatial_relation 
+what s the movie schedule at great escape theatres	SearchScreeningEvent	O O O B-object_type I-object_type O B-location_name I-location_name I-location_name 
+show the times for cheers for miss bishop at dipson theatres 	SearchScreeningEvent	O O B-object_type O B-movie_name I-movie_name I-movie_name I-movie_name O B-location_name I-location_name 
+i want to see married to the enemy 2 at a cinema 	SearchScreeningEvent	O O O O B-movie_name I-movie_name I-movie_name I-movie_name I-movie_name O O B-object_location_type 

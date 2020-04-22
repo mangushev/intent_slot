@@ -1,0 +1,14 @@
+
+export BERT_DIR=gs://$GCP_PROJECT_ID.appspot.com/test/pretrained/uncased_L-12_H-768_A-12
+export INTENT_SLOT_DIR=$INTENT_SLOT_FOLDER/data
+export TRAINED_CLASSIFIER=gs://$GCP_PROJECT_ID.appspot.com/test/intent_slot_output/uncased_L-12_H-768_A-12/model.ckpt-1255
+
+python $INTENT_SLOT_FOLDER/bert/run_intent_slot.py \
+  --task_name=INTENT_SLOT \
+  --saved_model=true \
+  --data_dir=$INTENT_SLOT_DIR \
+  --vocab_file=$BERT_DIR/vocab.txt \
+  --bert_config_file=$BERT_DIR/bert_config.json \
+  --init_checkpoint=$TRAINED_CLASSIFIER \
+  --max_seq_length=128 \
+  --output_dir=gs://$GCP_PROJECT_ID.appspot.com/test/intent_slot_output/uncased_L-12_H-768_A-12/deployment/
