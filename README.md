@@ -78,7 +78,7 @@ Output will contain httpsTrigger. This url will be used in step 10. Please make 
 Use target URL to acceess deployed application
 To see application logging, use: gcloud app logs tail -s default
 Submit form with sentence like this to see intents and slots: send $10.00 from savings to checking
-![screen sample](images/screen-sample.png "output sample")
+![screen sample](images/sample-screen.PNG "output sample")
 12. After all done:
 - Disable application in appengine
 - Delete model in ai platform or delete version, this is what is billed
