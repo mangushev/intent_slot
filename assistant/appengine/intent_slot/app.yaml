@@ -1,0 +1,4 @@
+runtime: python37
+
+env_variables:
+        INTENT_SLOT_URL: 'https://us-central1-robotic-gasket-241111.cloudfunctions.net/intent_slot'

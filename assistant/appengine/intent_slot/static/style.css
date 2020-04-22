@@ -1,0 +1,11 @@
+
+
+input[type=text] {
+	display: block;
+	width: 40em;
+	height: 2em;
+	line-height: 2;
+	background: #000000;
+	color: #ffffff;
+	border-radius: .25em;
+}

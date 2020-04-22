@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<title>Intent Identification</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css', v='4') }}">
+</head>
+
+<body>
+
+<h1>What are you asking exactly?</h1>
+{% if predicted_intent %}
+<p>
+	<div>
+		<b>You asked:</b> {{ user_question }}
+	</div>
+	<div>
+		<b>Predicted Intent:</b> {{ predicted_intent }}
+	</div>
+	<div>
+		<b>Predicted Slots:</b> {{ predicted_slots }}
+	</div>
+	<div>
+		<b>Corresponding Words:</b> {{ words }}
+	</div>
+	<div>
+		<b>Raw Tokens:</b> {{ tokens }}
+	</div>
+	<div>
+		<b>Elapsed time:</b> {{ elapsed_time }}
+	</div>
+</p>
+{% endif %}
+<p>
+<form method="POST" action="{{ url_for('result') }}">
+	<div>
+	Please enter your question:
+	<div>
+		<input type="text" name="user_question">
+	</div>
+	</div>
+	<button type="submit">Process Query</button>
+</form>
+</body>
+</html>
