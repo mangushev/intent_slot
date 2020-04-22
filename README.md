@@ -52,6 +52,7 @@ Slot are manually labeled for:
 Steps:
 
 1. Create gcp project, create simple VM instance, use standard 2-4 cpu, debian 9 deep learning TF 1.15. Create TPU instance, TF 1.15, preemptive (but keep it off until you start training!)
+2. Create ai model (actual model version will be deployed later): `gcloud beta ai-platform models create --enable-console-logging --enable-logging --description "intent slots" intent_slot`. This can be done from gcp console as well
 2. Get BERT and it should be in the bert folder. Put run_intent_slot.py into this folder as well
 3. Get gcp storage, create test folders test/pretrained/uncased_L-12_H-768_A-12/ and put unzipped BERT pretrained uncased_L-12_H-768_A-12 model content there. Use gsutil cp
 4. Create service account key. Please refer to https://cloud.google.com/docs/authentication/getting-started. Key will be stored in json file and move it to assistant/functions/intent_slot folder
@@ -77,12 +78,8 @@ Output will contain httpsTrigger. This url will be used in step 10. Please make 
 Use target URL to acceess deployed application
 To see application logging, use: gcloud app logs tail -s default
 Submit form with sentence like this to see intents and slots: send $10.00 from savings to checking
+![screen sample](images/screen-sample.png "output sample")
 12. After all done:
 - Disable application in appengine
-- Delete model in ai platform
+- Delete model in ai platform or delete version, this is what is billed
 - Delete function
-
-
-
-
-
