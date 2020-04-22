@@ -7,7 +7,7 @@
 
 <body>
 
-<h1>Please enter payment request and submit:</h1>
+<h1>Request Form:</h1>
 {% if predicted_intent %}
 <p>
 	<div>
@@ -33,7 +33,7 @@
 <p>
 <form method="POST" action="{{ url_for('result') }}">
 	<div>
-	Please enter your question:
+	Please enter your request:
 	<div>
 		<input type="text" name="user_question">
 	</div>
