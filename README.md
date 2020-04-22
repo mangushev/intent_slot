@@ -1,14 +1,14 @@
-# Intent slot model used in artificial assistant in the bank or similar industry. Implemented Tensorflow with instructions how to run to run on GCP.
+# Intent slot model used in artificial assistant in the bank or similar industry. 
 
 This is an implementation of "BERT for Joint Intent Classification and Slot Filling" - arXiv:1902.10909v1  [cs.CL]  28 Feb 2019.
 
-Also, this work targets gcp and TPU used for training. It can be run off AWS or Azure, but some migration work will be needed. 
+This work targets gcp and TPU used for training. It can be run off AWS or Azure, but some migration work will be needed. 
 
 Joint training using BERT with loss calculated as total loss from intent and slots. Objective function is calculated as in equation (3) in the arcticle. 
 
 Please make yourself familiar with BERT: Pre-training of Deep Bidirectional Transformers forLanguage Understanding - arXiv:1810.04805v2  [cs.CL]  24 May 2019
 
-BERT is extended to train model for joint intent and slots. In BERT for problem like this, we use first model output as classifier and other outputs can be used as output tokens for translation problem, for example. So we use first token for intent classification and other tokens for slots. The challenge is that BERT uses sub-tokens, so it some alignment strategy is pursued. See the code!
+BERT is extended to train model for joint intent and slots. In BERT, for problem like this, we use first model token output as classifier and other outputs can be used as output tokens for translation problem, for example. So we use first token for intent classification and other tokens for slots. The challenge is that BERT uses sub-tokens, so alignment is done as it is mentioned in the article.
 
 Data used in this work:
 
@@ -55,7 +55,7 @@ Steps:
 2. Create ai model (actual model version will be deployed later): `gcloud beta ai-platform models create --enable-console-logging --enable-logging --description "intent slots" intent_slot`. This can be done from gcp console as well
 2. Get BERT and it should be in the bert folder. Put run_intent_slot.py into this folder as well
 3. Get gcp storage, create test folders test/pretrained/uncased_L-12_H-768_A-12/ and put unzipped BERT pretrained uncased_L-12_H-768_A-12 model content there. Use gsutil cp
-4. Create service account key. Please refer to https://cloud.google.com/docs/authentication/getting-started. Key will be stored in json file and move it to assistant/functions/intent_slot folder
+4. Create service account key. Please refer to https://cloud.google.com/docs/authentication/getting-started. Key will be stored in json file and move it to assistant/functions/intent_slot folder. Function uses this key to authenticate to ai platform
 5. Set varibles GCP_PROJECT_ID as your gcp project is, TPU_NAME as name of your tpu instance, INTENT_SLOT_FOLDER points to the root folder of this software, GOOGLE_APPLICATION_CREDENTIALS is the name of the key file created in Step 4 (not path, but file name)
 6. Start TPU. Go to train folder and run: sh INTENT_SLOT.evaluate. Shutdown TPU, not needed any more. Output will look like below. Accuracy similar to what is in the article:
 `I0421 18:07:35.874321 140401829115648 estimator.py:2039] Saving dict for global step 1255: global_step = 1255, intent_accuracy = 0.9894737, intent_loss = 0.062348537, loss = 3.2194374, slot_accuracy = 0.96710986, slot_lm_loss = 0.19705378
@@ -73,11 +73,10 @@ I0421 18:07:38.694137 140401829115648 run_intent_slot.py:990]   slot_lm_loss = 0
 `I0421 18:59:58.103994 139887238223616 builder_impl.py:421] SavedModel written to: gs://__PROJECT_ID__.appspot.com/test/intent_slot_output/uncased_L-12_H-768_A-12/deployment/temp-b'1587495558'/saved_model.pb`
 9. Go to assistant/deploy/ and run: sh deploy_intent_slot.sh 1587495558. Again, number-parameter, take from previous step. It will deploy your model to gcp ai platform. 
 10. Go to assistant/functions/intent_slot and run: sh ../deploy_function.sh intent_slot
-Output will contain httpsTrigger. This url will be used in step 10. Please make "Allow unauthenticated" for this function from gcp console. See "Managing Access via IAM" section to do it in few steps. For production deployment, secure this! 
+Output will contain httpsTrigger. This url will be used in step 11. Please make "Allow unauthenticated" for this function from gcp console. See "Managing Access via IAM" section to do it in few steps. For production deployment, secure this! 
 11. Go to assistant/appengine/intent_slot. Edit app.yaml and update INTENT_SLOT_URL. Use httpsTrigger from previous step. Application have to be enabled on gcp Appengine (It is enabled in Settings section). After this, run: gcloud beta app deploy 
-Use target URL to acceess deployed application
 To see application logging, use: gcloud app logs tail -s default
-Submit form with sentence like this to see intents and slots: send $10.00 from savings to checking
+12. Use target URL to acceess deployed application. Submit form with sentence like this to see intents and slots: send $10.00 from savings to checking
 ![screen sample](images/sample-screen.PNG "output sample")
 12. After all done:
 - Disable application in appengine
