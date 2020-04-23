@@ -1,8 +1,8 @@
-# Intent slot model used in artificial assistant in the bank or similar industry 
+# Intent slot is a primary model used in artificial assistant  
 
 This is an implementation of "BERT for Joint Intent Classification and Slot Filling" - arXiv:1902.10909v1  [cs.CL]  28 Feb 2019.
 
-This work targets gcp installation and, also, TPU was used for training. It can be run off AWS or Azure, but some migration work will be needed. 
+This work targets gcp installation and, also, TPU was used for training. It can be run off AWS or Azure, but some migration work will be needed. Also, model was implemented in context of financial industry, but it can be used for anything.
 
 Joint training using BERT with loss calculated as total loss from intent and slots. Objective function is calculated as in equation (3) in the arcticle. 
 
