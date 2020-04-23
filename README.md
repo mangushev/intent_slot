@@ -2,20 +2,20 @@
 
 This is an implementation of "BERT for Joint Intent Classification and Slot Filling" - arXiv:1902.10909v1  [cs.CL]  28 Feb 2019.
 
-This work targets gcp and TPU used for training. It can be run off AWS or Azure, but some migration work will be needed. 
+This work targets gcp installation and, also, TPU was used for training. It can be run off AWS or Azure, but some migration work will be needed. 
 
 Joint training using BERT with loss calculated as total loss from intent and slots. Objective function is calculated as in equation (3) in the arcticle. 
 
 Please make yourself familiar with BERT: Pre-training of Deep Bidirectional Transformers forLanguage Understanding - arXiv:1810.04805v2  [cs.CL]  24 May 2019
 
-BERT is extended to train model for joint intent and slots. In BERT, for problem like this, we use first model token output as classifier and other outputs can be used as output tokens for translation problem, for example. So we use first token for intent classification and other tokens for slots. The challenge is that BERT uses sub-tokens, so alignment is done as it is mentioned in the article.
+BERT is extended to train model for joint intent and slots. In BERT, we use first ouput token as classifier and other output are can be used for as in problems like translation, speech synthesis or recognition when many input tokens are mapped to output tokens. So we use first token for intent classification and other tokens for slots. The challenge is that BERT uses sub-tokens, so alignment is done as it is mentioned in the article.
 
 Data used in this work:
 
 - SNIPS Voice Platform: an embedded Spoken Language Understanding system for private-by-design voice interfaces - arXiv:1805.10190v3  [cs.CL]  6 Dec 2018 
 - An Evaluation Dataset for Intent Classification and Out-of-Scope Prediction - arXiv:1909.02027v1  [cs.CL]  4 Sep 2019
 
-Snips dataset contains labels for both intent and slots and "Out-of-Scope Prediction" has data related to financial domain without slot labels and some of this data was labeled manually and merged with SNIPS. This works is intented for some financial domain and this is the reason that "Out-of-Scope Prediction" was taken advantage of.
+Snips dataset contains labels for both intent and slots and "Out-of-Scope Prediction" has data related to financial domain, but without slot labels and so slots were labeled manually and merged with SNIPS. This work is intented for some financial domain and this is why "Out-of-Scope Prediction" was used. They do have variaty of finacial intents.
 
 Contains of the repository:
 
@@ -32,7 +32,7 @@ Intents and slot labels came from SNIPS for:
 - SearchCreativeWork
 - SearchScreeningEvent
 
-These are not a financial domain, but just to have more intents to work with. Also, they can be considered Out-of-Scope intents. Remove them when you have plenty of domain intents.
+These above are not a financial domain, but just to have more intents to work with. Also, they can be considered Out-of-Scope intents. Remove them when you have plenty of your own domain intents.
 
 Slot are manually labeled for:
 - bill_due
@@ -49,7 +49,7 @@ Slot are manually labeled for:
 - assistant/functions/deploy_function.sh deploys function to gcloud 
 - assistant/appengine/intent_slot contains sample application to invoke function to run intent_slot prediction
 
-Steps:
+Steps to train, deploy to gcp facilities and run test web page:
 
 1. Create gcp project, create simple VM instance, use standard 2-4 cpu, debian 9 deep learning TF 1.15. Create TPU instance, TF 1.15, preemptive (but keep it off until you start training!)
 2. Create ai model (actual model version will be deployed later): `gcloud beta ai-platform models create --enable-console-logging --enable-logging --description "intent slots" intent_slot`. This can be done from gcp console as well
