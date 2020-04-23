@@ -1,4 +1,4 @@
-# Intent slot model used in artificial assistant in the bank or similar industry. 
+# Intent slot model used in artificial assistant in the bank or similar industry 
 
 This is an implementation of "BERT for Joint Intent Classification and Slot Filling" - arXiv:1902.10909v1  [cs.CL]  28 Feb 2019.
 
@@ -76,7 +76,7 @@ I0421 18:07:38.694137 140401829115648 run_intent_slot.py:990]   slot_lm_loss = 0
 Output will contain httpsTrigger. This url will be used in step 11. Please make "Allow unauthenticated" for this function from gcp console. See "Managing Access via IAM" section to do it in few steps. For production deployment, secure this! 
 11. Go to assistant/appengine/intent_slot. Edit app.yaml and update INTENT_SLOT_URL. Use httpsTrigger from previous step. Application have to be enabled on gcp Appengine (It is enabled in Settings section). After this, run: gcloud beta app deploy 
 To see application logging, use: gcloud app logs tail -s default
-12. Use target URL to acceess deployed application. Submit form with sentence like this to see intents and slots: send $10.00 from savings to checking
+12. Use target URL to acceess deployed application. Submit form with sentence like this to see intents and slots: `send $10.00 from savings to checking`
 ![screen sample](images/sample-screen.PNG "output sample")
 12. After all done:
 - Disable application in appengine
