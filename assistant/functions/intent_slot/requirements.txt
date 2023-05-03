@@ -1,4 +1,4 @@
-flask==1.1.1
+flask==x.x.x
 google-cloud-error-reporting==0.32.1
 numpy
 google-api-python-client
